@@ -1,0 +1,28 @@
+project_name: "lfm2-ner-poc"
+model_name: "LiquidAI/LFM2.5-350M"
+training_type: "sft"
+
+dataset:
+  path: "lukeinglis21/conll2003-ner-sft-1k"
+  type: "sft"
+  test_size: 0.1
+
+training_config:
+  extends: "DEFAULT_SFT"
+  num_train_epochs: 3
+  per_device_train_batch_size: 2
+  learning_rate: 2e-5
+
+peft_config:
+  extends: "DEFAULT_LORA"
+  use_peft: true
+
+modal:
+  app_name: "lfm2-ner-poc"
+  gpu: "A10G"
+  timeout: 3600
+  output_volume: "leap-finetune"         # Modal Volume, created automatically
+  output_dir: "/outputs"                 # mount point inside the container
+  detach: false                          # true = fire-and-forget, false = streams logs
+  # secrets:
+  #   - "wandb-secret"                   # optional, WANDB_API_KEY for experiment tracking

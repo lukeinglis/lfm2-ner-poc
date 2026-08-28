@@ -35,6 +35,8 @@ def parse(text, lenient):
         raise ValueError("not a list")
     return obj
 
+VALID_TYPES = {"PER", "ORG", "LOC", "MISC"}
+bad_type = 0
 strict = 0
 valid = 0
 tp = fp = fn = 0
@@ -64,6 +66,7 @@ for i, r in enumerate(rows):
         valid += 1
     except Exception:
         pred = set()
+    bad_type += sum(1 for _, t in pred if t not in VALID_TYPES)
     tp += len(pred & gold); fp += len(pred - gold); fn += len(gold - pred)
     preds.append({"input": msgs[1]["content"], "gold": sorted(gold),
                   "raw": text, "pred": sorted(pred)})
@@ -79,6 +82,7 @@ res = {"model": a.model, "n": len(rows),
        "strict_json_pct": round(100 * strict / len(rows), 2),
        "lenient_json_pct": round(100 * valid / len(rows), 2),
        "precision": round(prec, 4), "recall": round(rec, 4), "f1": round(f1, 4),
+       "out_of_schema_types": bad_type,
        "median_latency_ms": round(lat[len(lat) // 2], 1), "device": dev}
 print(json.dumps(res, indent=2))
 

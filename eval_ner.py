@@ -7,6 +7,9 @@ p.add_argument("--model", default="LiquidAI/LFM2.5-350M")
 p.add_argument("--test", default="data/test.jsonl")
 p.add_argument("--out", default="results/baseline.json")
 p.add_argument("--limit", type=int, default=200)
+p.add_argument("--system-file", default=None,
+                help="Override the system prompt with this file's contents "
+                     "(default: use each row's own system message)")
 a = p.parse_args()
 
 dev = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -14,6 +17,7 @@ tok = AutoTokenizer.from_pretrained(a.model)
 model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.float32).to(dev).eval()
 
 rows = [json.loads(l) for l in open(a.test)][: a.limit]
+system_override = open(a.system_file).read().strip() if a.system_file else None
 
 def norm(items):
     return {(d["text"].strip(), d["type"].strip()) for d in items
@@ -30,7 +34,8 @@ def parse(text, lenient):
     if isinstance(obj, dict):
         if not lenient:
             raise ValueError("not a list")
-        obj = [obj]
+        list_valued = [v for v in obj.values() if isinstance(v, list)]
+        obj = list_valued[0] if len(list_valued) == 1 else [obj]
     if not isinstance(obj, list):
         raise ValueError("not a list")
     return obj
@@ -45,6 +50,8 @@ preds = []
 
 for i, r in enumerate(rows):
     msgs = r["messages"][:2]
+    if system_override is not None:
+        msgs = [{"role": "system", "content": system_override}, msgs[1]]
     gold = norm(json.loads(r["messages"][2]["content"]))
     enc = tok.apply_chat_template(msgs, add_generation_prompt=True,
                                   return_tensors="pt", return_dict=True)

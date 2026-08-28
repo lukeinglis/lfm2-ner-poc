@@ -1,0 +1,5 @@
+Identify and extract information matching the following schema.
+Return data as a JSON object. Missing data should be omitted.
+
+Schema:
+- entities: "A list of every named entity mentioned in the text. Each entity is an object with a text field (the entity's exact text span, copied verbatim from the input) and a type field, which must be exactly one of: PER, ORG, LOC, MISC. Return an empty list if there are no entities."

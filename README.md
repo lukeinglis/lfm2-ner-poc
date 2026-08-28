@@ -124,6 +124,23 @@ a Python loader script, which `datasets` v4 no longer supports; the converter
 loads from the auto-generated parquet branch instead
 (`revision="refs/convert/parquet"`).
 
+## Output length
+
+| | Baseline | 1k | 8k |
+|---|---|---|---|
+| Median response | 206 chars | 36 chars | 74 chars |
+| Mean response | 210 chars | 42 chars | 75 chars |
+
+The tuned model produces 64% shorter output than the baseline while scoring 6x
+higher on F1. The baseline is verbose because it wraps everything in markdown
+fences and tags nearly every capitalized token; the 8k model emits a bare array
+containing only the entities it found. Fewer generated tokens means
+proportionally lower inference cost, independent of hardware.
+
+The 1k model is shortest of all, but for the wrong reason — it was
+under-emitting entities, which is the same undertraining signal visible in its
+recall and type distribution.
+
 ## What is not measured
 
 Latency numbers were collected but are omitted. All inference ran at full

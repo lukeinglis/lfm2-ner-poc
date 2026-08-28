@@ -1,0 +1,4068 @@
+{
+  "summary": {
+    "model": "/Users/lukeinglis/dev/lfm2-ner-poc/model/LFM2.5-350M-sft-conll2003--all-lr2em05-w0p2-lora_a-20260828_175413/LFM2.5-350M-sft-conll2003--all-lr2em05-w0p2-lora_m-20260828_175413",
+    "n": 200,
+    "strict_json_pct": 92.5,
+    "lenient_json_pct": 92.5,
+    "precision": 0.3257,
+    "recall": 0.1749,
+    "f1": 0.2276,
+    "median_latency_ms": 907.5,
+    "device": "mps"
+  },
+  "predictions": [
+    {
+      "input": "SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .",
+      "gold": [
+        [
+          "CHINA",
+          "PER"
+        ],
+        [
+          "JAPAN",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"JAPAN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "JAPAN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Nadim Ladki",
+      "gold": [
+        [
+          "Nadim Ladki",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Nadim\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Nadim",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"AL-AIN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "AL-AIN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Japan began the defence of their Asian Cup title with a lucky 2-1 win against Syria in a Group C championship match on Friday .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "But China saw their luck desert them in the second match of the group , crashing to a surprise 2-0 defeat to newcomers Uzbekistan .",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" China\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "China",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "China controlled most of the match and saw several chances missed until the 78th minute when Uzbek striker Igor Shkvyrin took advantage of a misdirected defensive header to lob the ball over the advancing Chinese keeper and into an empty net .",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Chinese",
+          "MISC"
+        ],
+        [
+          "Igor Shkvyrin",
+          "PER"
+        ],
+        [
+          "Uzbek",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" China\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "China",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Oleg Shatskiku made sure of the win in injury time , hitting an unstoppable left foot shot from just outside the area .",
+      "gold": [
+        [
+          "Oleg Shatskiku",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Oleg Shatskiku\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Oleg Shatskiku",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "The former Soviet republic was playing in an Asian Cup finals tie for the first time .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Soviet",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Soviet\", \"type\": \"MISC\"}]",
+      "pred": [
+        [
+          "Soviet",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Despite winning the Asian Games title two years ago , Uzbekistan are in the finals as outsiders .",
+      "gold": [
+        [
+          "Asian Games",
+          "MISC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Uzbekistan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Uzbekistan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Two goals from defensive errors in the last six minutes allowed Japan to come from behind and collect all three points from their opening meeting against Syria .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Takuya Takagi scored the winner in the 88th minute , rising to head a Hiroshige Yanagimoto cross towards the Syrian goal which goalkeeper Salem Bitar appeared to have covered but then allowed to slip into the net .",
+      "gold": [
+        [
+          "Hiroshige Yanagimoto",
+          "PER"
+        ],
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Takuya\", \"type\": \"PER\"}, {\"text\": \"Takagi\", \"type\": \"PER\"}, {\"text\": \"accelerator\", \"type\": \"PER\"}, {\"text\": \"Hiroshige\", \"type\": \"PER\"}, {\"text\": \"Yanagimoto\", \"type\": \"PER\"}, {\"text\": \"cross\", \"type\": \"PER\"}, {\"text\": \"Salem\", \"type\": \"PER\"}, {\"text\": \"Bitar\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Hiroshige",
+          "PER"
+        ],
+        [
+          "Salem",
+          "PER"
+        ],
+        [
+          "Takagi",
+          "PER"
+        ],
+        [
+          "Takuya",
+          "PER"
+        ],
+        [
+          "Yanagimoto",
+          "PER"
+        ],
+        [
+          "accelerator",
+          "PER"
+        ],
+        [
+          "cross",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "It was the second costly blunder by Syria in four minutes .",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Syria\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Syria",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Defender Hassan Abbas rose to intercept a long ball into the area in the 84th minute but only managed to divert it into the top corner of Bitar 's goal .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Hassano\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Hassano",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Nader Jokhadar had given Syria the lead with a well-struck header in the seventh minute .",
+      "gold": [
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Nader Jokhadar\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Nader Jokhadar",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "Japan then laid siege to the Syrian penalty area for most of the game but rarely breached the Syrian defence .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Bitar pulled off fine saves whenever they did .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bitar\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Bitar",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan coach Shu Kamo said : ' ' The Syrian own goal proved lucky for us .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Shu Kamo",
+          "PER"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Japan",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "The Syrians scored early and then played defensively and adopted long balls which made it hard for us . '",
+      "gold": [
+        [
+          "Syrians",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Syrians\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Syrians",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "'",
+      "gold": [],
+      "raw": "[{\"text\": \"\", \"ORG\", \"LOC\"]]",
+      "pred": []
+    },
+    {
+      "input": "Japan , co-hosts of the World Cup in 2002 and ranked 20th in the world by FIFA , are favourites to regain their title here .",
+      "gold": [
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Hosts UAE play Kuwait and South Korea take on Indonesia on Saturday in Group A matches .",
+      "gold": [
+        [
+          "Indonesia",
+          "LOC"
+        ],
+        [
+          "Kuwait",
+          "LOC"
+        ],
+        [
+          "South Korea",
+          "LOC"
+        ],
+        [
+          "UAE",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"UAE\", \"type\": \"ORG\", \"loc\": \"UAE\", \"group\": \"Group A\", \"match\": \"Indonesia\", \"date\": \"Saturday\"}]",
+      "pred": [
+        [
+          "UAE",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "All four teams are level with one point each from one game .",
+      "gold": [],
+      "raw": "[{\"text\": \"All\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "All",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "RUGBY UNION - CUTTITTA BACK FOR ITALY AFTER A YEAR .",
+      "gold": [
+        [
+          "CUTTITTA",
+          "PER"
+        ],
+        [
+          "ITALY",
+          "LOC"
+        ],
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"RUGBY UNION\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "ROME 1996-12-06",
+      "gold": [
+        [
+          "ROME",
+          "LOC"
+        ]
+      ],
+      "raw": "[ROME]",
+      "pred": []
+    },
+    {
+      "input": "Italy recalled Marcello Cuttitta",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Marcello Cuttitta",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Italy\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Italy",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "on Friday for their friendly against Scotland at Murrayfield more than a year after the 30-year-old wing announced he was retiring following differences over selection .",
+      "gold": [
+        [
+          "Murrayfield",
+          "LOC"
+        ],
+        [
+          "Scotland",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"scottland\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "scottland",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Cuttitta , who trainer George Coste said was certain to play on Saturday week , was named in a 21-man squad lacking only two of the team beaten 54-21 by England at Twickenham last month .",
+      "gold": [
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "George Coste",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Cuttitta\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Cuttitta",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Stefano Bordon is out through illness and Coste said he had dropped back row Corrado Covi , who had been recalled for the England game after five years out of the national team .",
+      "gold": [
+        [
+          "Corrado Covi",
+          "PER"
+        ],
+        [
+          "Coste",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Stefano Bordon",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Stefano Bondarono\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Stefano Bondarono",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Cuttitta announced his retirement after the 1995 World Cup , where he took issue with being dropped from the Italy side that faced England in the pool stages .",
+      "gold": [
+        [
+          "1995 World Cup",
+          "MISC"
+        ],
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Italy",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Cuttitta\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Cuttitta",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Coste said he had approached the player two months ago about a comeback .",
+      "gold": [
+        [
+          "Coste",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Coste\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Coste",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "\" He ended the World Cup on the wrong note , \" Coste said .",
+      "gold": [
+        [
+          "Coste",
+          "PER"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"World Cup\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "World Cup",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "\" I thought it would be useful to have him back and he said he would be available .",
+      "gold": [],
+      "raw": "[{\"text\": \"\", \"return\", \"return\"]]",
+      "pred": []
+    },
+    {
+      "input": "I think now is the right time for him to return . \"",
+      "gold": [],
+      "raw": "[{\"text\": \"now\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "now",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Squad : Javier Pertile , Paolo Vaccari , Marcello Cuttitta , Ivan Francescato , Leandro Manteri , Diego Dominguez , Francesco Mazzariol , Alessandro Troncon , Orazio Arancio , Andrea Sgorlon , Massimo Giovanelli , Carlo Checchinato , Walter Cristofoletto , Franco Properzi Curti , Carlo Orlandi , Massimo Cuttitta , Giambatista Croci , Gianluca Guidi , Nicola Mazzucato , Alessandro Moscardi , Andrea Castellani .",
+      "gold": [
+        [
+          "Alessandro Moscardi",
+          "PER"
+        ],
+        [
+          "Alessandro Troncon",
+          "PER"
+        ],
+        [
+          "Andrea Castellani",
+          "PER"
+        ],
+        [
+          "Andrea Sgorlon",
+          "PER"
+        ],
+        [
+          "Carlo Checchinato",
+          "PER"
+        ],
+        [
+          "Carlo Orlandi",
+          "PER"
+        ],
+        [
+          "Diego Dominguez",
+          "PER"
+        ],
+        [
+          "Francesco Mazzariol",
+          "PER"
+        ],
+        [
+          "Franco Properzi Curti",
+          "PER"
+        ],
+        [
+          "Giambatista Croci",
+          "PER"
+        ],
+        [
+          "Gianluca Guidi",
+          "PER"
+        ],
+        [
+          "Ivan Francescato",
+          "PER"
+        ],
+        [
+          "Javier Pertile",
+          "PER"
+        ],
+        [
+          "Leandro Manteri",
+          "PER"
+        ],
+        [
+          "Marcello Cuttitta",
+          "PER"
+        ],
+        [
+          "Massimo Cuttitta",
+          "PER"
+        ],
+        [
+          "Massimo Giovanelli",
+          "PER"
+        ],
+        [
+          "Nicola Mazzucato",
+          "PER"
+        ],
+        [
+          "Orazio Arancio",
+          "PER"
+        ],
+        [
+          "Paolo Vaccari",
+          "PER"
+        ],
+        [
+          "Walter Cristofoletto",
+          "PER"
+        ]
+      ],
+      "raw": "[JSON]",
+      "pred": []
+    },
+    {
+      "input": "SOCCER - LATE GOALS GIVE JAPAN WIN OVER SYRIA .",
+      "gold": [
+        [
+          "JAPAN",
+          "LOC"
+        ],
+        [
+          "SYRIA",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"JAPAN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "JAPAN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"AL-AIN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "AL-AIN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Two goals in the last six minutes gave holders Japan an uninspiring 2-1 Asian Cup victory over Syria on Friday .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"country\"}]",
+      "pred": [
+        [
+          "Japan",
+          "country"
+        ]
+      ]
+    },
+    {
+      "input": "Takuya Takagi headed the winner in the 88th minute of the group C game after goalkeeper Salem Bitar spoiled a mistake-free display by allowing the ball to slip under his body .",
+      "gold": [
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Takuya\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Takuya",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "It was the second Syrian defensive blunder in four minutes .",
+      "gold": [
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Syrian\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Syrian",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Defender Hassan Abbas rose to intercept a long ball into the area in the 84th minute but only managed to divert it into the top corner of Bitar 's goal .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Hassano\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Hassano",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Syria had taken the lead from their first serious attack in the seventh minute .",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Syria\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Nader Jokhadar headed a cross from the right by Ammar Awad into the top right corner of Kenichi Shimokawa 's goal .",
+      "gold": [
+        [
+          "Ammar Awad",
+          "PER"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Nader Jokhadar\", \"type\": \"PER\"}, {\"text\": \" Kenichi Shimokawa\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan then laid siege to the Syrian penalty area and had a goal disallowed for offside in the 16th minute .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "A minute later , Bitar produced a good double save , first from Kazuyoshi Miura 's header and then blocked a Takagi follow-up shot .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Kazuyoshi Miura",
+          "PER"
+        ],
+        [
+          "Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bitar\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Bitar",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Bitar saved well again from Miura in the 37th minute , parrying away his header from a corner .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Miura",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bitar\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Bitar",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan started the second half brightly but Bitar denied them an equaliser when he dived to his right to save Naoki Soma 's low drive in the 53rd minute .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Naoki Soma",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Japan : 19 - Kenichi Shimokawa , 2 - Hiroshige Yanagimoto , 3 - Naoki Soma , 4 - Masami Ihara , 5 - Norio Omura , 6 - Motohiro Yamaguchi , 8 - Masakiyo Maezono ( 7 - Yasuto Honda 71 ) , 9 - Takuya Takagi , 10 - Hiroshi Nanami , 11 - Kazuyoshi Miura , 15 - Hiroaki Morishima ( 14 - Masayuki Okano 75 ) .",
+      "gold": [
+        [
+          "Hiroaki Morishima",
+          "PER"
+        ],
+        [
+          "Hiroshi Nanami",
+          "PER"
+        ],
+        [
+          "Hiroshige Yanagimoto",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Kazuyoshi Miura",
+          "PER"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Masakiyo Maezono",
+          "PER"
+        ],
+        [
+          "Masami Ihara",
+          "PER"
+        ],
+        [
+          "Masayuki Okano",
+          "PER"
+        ],
+        [
+          "Motohiro Yamaguchi",
+          "PER"
+        ],
+        [
+          "Naoki Soma",
+          "PER"
+        ],
+        [
+          "Norio Omura",
+          "PER"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ],
+        [
+          "Yasuto Honda",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Japan",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Syria : 24 - Salem Bitar , 3 - Bachar Srour ; 4 - Hassan Abbas , 5 - Tarek Jabban , 6 - Ammar Awad ( 9 - Louay Taleb 69 ) , 8 - Nihad al-Boushi , 10 - Mohammed Afash , 12 - Ali Dib , 13 - Abdul Latif Helou ( 17 - Ammar Rihawiy 46 ) , 14 - Khaled Zaher ; 16 - Nader Jokhadar .",
+      "gold": [
+        [
+          "Abdul Latif Helou",
+          "PER"
+        ],
+        [
+          "Ali Dib",
+          "PER"
+        ],
+        [
+          "Ammar Awad",
+          "PER"
+        ],
+        [
+          "Ammar Rihawiy",
+          "PER"
+        ],
+        [
+          "Bachar Srour",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ],
+        [
+          "Khaled Zaher",
+          "PER"
+        ],
+        [
+          "Louay Taleb",
+          "PER"
+        ],
+        [
+          "Mohammed Afash",
+          "PER"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Nihad al-Boushi",
+          "PER"
+        ],
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ],
+        [
+          "Tarek Jabban",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Syria\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "FREESTYLE SKIING-WORLD CUP MOGUL RESULTS .",
+      "gold": [
+        [
+          "SKIING-WORLD CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"FREESTYLE\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "FREESTYLE",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "TIGNES , France 1996-12-06",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "TIGNES",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Tignes\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Tignes",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Results of the World Cup",
+      "gold": [
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[result]",
+      "pred": []
+    },
+    {
+      "input": "freestyle skiing moguls competition on Friday :",
+      "gold": [],
+      "raw": "[{\"text\": \"freestyle\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "freestyle",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Men",
+      "gold": [],
+      "raw": "[{\"text\": \"Men\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Men",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "1. Jesper Ronnback ( Sweden ) 25.76 points",
+      "gold": [
+        [
+          "Jesper Ronnback",
+          "PER"
+        ],
+        [
+          "Sweden",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Jesper Ronnback\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Jesper Ronnback",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "2. Andrei Ivanov ( Russia ) 24.88",
+      "gold": [
+        [
+          "Andrei Ivanov",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Andrei Ivanov\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Andrei Ivanov",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "3. Ryan Johnson ( Canada ) 24.57",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Ryan Johnson",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ryan\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Ryan",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "4. Jean-Luc Brassard ( Canada ) 24.40",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Jean-Luc Brassard",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Jean-Luc Brassard\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Jean-Luc Brassard",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "5. Korneilus Hole ( Norway ) 23.92",
+      "gold": [
+        [
+          "Korneilus Hole",
+          "PER"
+        ],
+        [
+          "Norway",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Korneli\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Korneli",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "6. Jeremie Collomb-Patton ( France ) 23.87",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Jeremie Collomb-Patton",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Jeremie Collomb-Patton\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Jeremie Collomb-Patton",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "7. Jim Moran ( U.S. ) 23.25",
+      "gold": [
+        [
+          "Jim Moran",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Jim Moran\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Jim Moran",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "8. Dominick Gauthier ( Canada ) 22.73",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Dominick Gauthier",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Dominick Gauthier\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Dominick Gauthier",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "9. Johann Gregoire ( France ) 22.58",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Johann Gregoire",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Johann Gregoire\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Johann Gregoire",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "10. Troy Benson ( U.S. ) 22.56",
+      "gold": [
+        [
+          "Troy Benson",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Troy Benson\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Troy Benson",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Women",
+      "gold": [],
+      "raw": "[{\"text\": \"women\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "women",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "1. Tatjana Mittermayer ( Germany ) 24.32",
+      "gold": [
+        [
+          "Germany",
+          "LOC"
+        ],
+        [
+          "Tatjana Mittermayer",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Tatjana Mittermayer\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Tatjana Mittermayer",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "2. Candice Gilg ( France ) 24.31",
+      "gold": [
+        [
+          "Candice Gilg",
+          "PER"
+        ],
+        [
+          "France",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Candice Gilg\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Candice Gilg",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "3. Minna Karhu ( Finland ) 24.05",
+      "gold": [
+        [
+          "Finland",
+          "LOC"
+        ],
+        [
+          "Minna Karhu",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Minna Karhu\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Minna Karhu",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "4. Tae Satoya ( Japan ) 23.75",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Tae Satoya",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Tae Satoya\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Tae Satoya",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "5. Ann Battellle ( U.S. ) 23.56",
+      "gold": [
+        [
+          "Ann Battellle",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ann Battellle\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Ann Battellle",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "6. Donna Weinbrecht ( U.S. ) 22.48",
+      "gold": [
+        [
+          "Donna Weinbrecht",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Donna Weinbrecht\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Donna Weinbrecht",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "7. Liz McIntyre ( U.S. ) 22.00",
+      "gold": [
+        [
+          "Liz McIntyre",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Liz McIntyre\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Liz McIntyre",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "8. Elena Koroleva ( Russia ) 21.77",
+      "gold": [
+        [
+          "Elena Koroleva",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Elena Koroleva\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Elena Koroleva",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "9. Ljudmila Dymchenko ( Russia ) 21.59",
+      "gold": [
+        [
+          "Ljudmila Dymchenko",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ljudmila Dymchenko\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Ljudmila Dymchenko",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "10. Katleen Allais ( France ) 21.58",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Katleen Allais",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Katleen Allais\", \"type\": \"PER\"}, {\"text\": \" France\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Katleen Allais",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - ASIAN CUP GROUP C RESULTS .",
+      "gold": [
+        [
+          "ASIAN CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"ASIAN CUP GROUP C\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "ASIAN CUP GROUP C",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"AL-AIN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "AL-AIN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Results of Asian Cup group C matches played on Friday :",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Asian\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Asian",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Japan 2 Syria 1 ( halftime 0-1 )",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Japan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Scorers :",
+      "gold": [],
+      "raw": "[{\"text\": \"Scorers\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Scorers",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan - Hassan Abbas 84 own goal , Takuya Takagi 88 .",
+      "gold": [
+        [
+          "Hassan Abbas",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Japan\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Japan",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Syria - Nader Jokhadar 7",
+      "gold": [
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Syria\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Attendance : 10,000 .",
+      "gold": [],
+      "raw": "[{\"text\": \"10,000\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "10,000",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "China 0 Uzbekistan 2 ( halftime 0-0 )",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" China\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "China",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Scorers : Shkvyrin Igor 78 , Shatskikh Oleg 90",
+      "gold": [
+        [
+          "Shatskikh Oleg",
+          "PER"
+        ],
+        [
+          "Shkvyrin Igor",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Shkvyrin Igor\", \"type\": \"PER\"}, {\"text\": \"Shatskikh Oleg\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Shatskikh Oleg",
+          "PER"
+        ],
+        [
+          "Shkvyrin Igor",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Attendence : 3,000",
+      "gold": [],
+      "raw": "[{\"text\": \"3,000\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "3,000",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Standings ( tabulate under played , won , drawn , lost , goals",
+      "gold": [],
+      "raw": "[{\"text\": \"standings\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "standings",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "for , goals against , points ) :",
+      "gold": [],
+      "raw": "[{\"text\": \"for\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "for",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Uzbekistan 1 1 0 0 2 0 3",
+      "gold": [
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Uzbekistan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Uzbekistan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Japan 1 1 0 0 2 1 3",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Japan\", \"type\": \"country\"}]",
+      "pred": [
+        [
+          "Japan",
+          "country"
+        ]
+      ]
+    },
+    {
+      "input": "Syria 1 0 0 1 1 2 0",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Syria\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "China 1 0 0 1 0 2 0",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" China\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "China",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "CRICKET - PAKISTAN V NEW ZEALAND ONE-DAY SCOREBOARD .",
+      "gold": [
+        [
+          "NEW ZEALAND",
+          "LOC"
+        ],
+        [
+          "PAKISTAN",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"CRICKET\", \"type\": \"PER\"}, {\"text\": \"PAKISTAN\", \"type\": \"ORG\"}, {\"text\": \"new\", \"type\": \"PER\"}, {\"text\": \"New\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "CRICKET",
+          "PER"
+        ],
+        [
+          "New",
+          "PER"
+        ],
+        [
+          "PAKISTAN",
+          "ORG"
+        ],
+        [
+          "new",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "[ CORRECTED 14:06 GMT ]",
+      "gold": [
+        [
+          "GMT",
+          "MISC"
+        ]
+      ],
+      "raw": "[PER]",
+      "pred": []
+    },
+    {
+      "input": "SIALKOT , Pakistan 1996-12-06",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ],
+        [
+          "SIALKOT",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"SIALKOT\", \"type\": \"ORG\"}, {\"text\": \" Pakistan\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Pakistan",
+          "LOC"
+        ],
+        [
+          "SIALKOT",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Scoreboard in the second",
+      "gold": [],
+      "raw": "[{\"text\": \"second\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "second",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "one-day cricket international between Pakistan and New Zealand",
+      "gold": [
+        [
+          "New Zealand",
+          "LOC"
+        ],
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Pakistan\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "on Friday :",
+      "gold": [],
+      "raw": "[{\"text\": \" on\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "on",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Pakistan",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Pakistan\", \"type\": \"country\"}]",
+      "pred": [
+        [
+          "Pakistan",
+          "country"
+        ]
+      ]
+    },
+    {
+      "input": "Saeed Anwar run out 91 ( corrects from 90 )",
+      "gold": [
+        [
+          "Saeed Anwar",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Saeed\", \"type\": \"person\"}]",
+      "pred": [
+        [
+          "Saeed",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "Zahoor Elahi b Cairns 86 ( corrects from 87 )",
+      "gold": [
+        [
+          "Cairns",
+          "PER"
+        ],
+        [
+          "Zahoor Elahi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Zahoor Elahi\", \"type\": \"PER\"}, {\"text\": \"Cairns\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Cairns",
+          "LOC"
+        ],
+        [
+          "Zahoor Elahi",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Ijaz Ahmad c Spearman b Vaughan 59",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "Spearman",
+          "PER"
+        ],
+        [
+          "Vaughan",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ijaz\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Ijaz",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Inzamamul Haq st Germon b Astle 2",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ],
+        [
+          "Germon",
+          "PER"
+        ],
+        [
+          "Inzamamul Haq",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Inzamamul\", \"type\": \"PER\"}, {\"text\": \"Haq\", \"type\": \"PER\"}, {\"text\": \"Germon\", \"type\": \"LOC\"}, {\"text\": \"Astle\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Astle",
+          "LOC"
+        ],
+        [
+          "Germon",
+          "LOC"
+        ],
+        [
+          "Haq",
+          "PER"
+        ],
+        [
+          "Inzamamul",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Wasim Akram b Harris 4",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Wasim Akram\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Shahid Afridi b Harris 2",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Shahid Afridi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Shahid\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Shahid",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Moin Khan c Astle b Harris 1",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Moin\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Moin",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Waqar Younis st Germon b Harris 0",
+      "gold": [
+        [
+          "Germon",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Waqar Younis",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Waqar Younis\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Waqar Younis",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Saqlain Mushtaq b Harris 2",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Saqlain Mushtaq\", \"type\": \"PER\"}, {\"text\": \"Harris\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Mushtaq Ahmad not out 5",
+      "gold": [
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Mushtaq\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Mushtaq",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Salim Malik not out 1",
+      "gold": [
+        [
+          "Salim Malik",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Salim\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Salim",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Extras ( lb-8 nb-2 w-14 ) 24",
+      "gold": [],
+      "raw": "[{\"text\": \"extras\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "extras",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Total ( for 9 wickets in 47 overs ) 277",
+      "gold": [],
+      "raw": "[{\"text\": \"total\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "total",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Fall of wicket : 1-177 ( corrects from 1-178 ) 2-225 3-240 4-247 5-252 6-260 7-261 8-269 9-276",
+      "gold": [],
+      "raw": "[{\"text\": \"fall\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "fall",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Bowling : Doull 8-1-60-0 ( w-3 ) , Kennedy 3-0-24-0 ( w-7 nb-1 ) ,",
+      "gold": [
+        [
+          "Doull",
+          "PER"
+        ],
+        [
+          "Kennedy",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Doull\", \"type\": \"PER\"}, {\"text\": \"Kennedy\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Doull",
+          "PER"
+        ],
+        [
+          "Kennedy",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Cairns 8-1-35-1 ( w-2 ) , Vaughan 9-1-55-1 , Harris 10-0-42-5 ( w-1 ) ,",
+      "gold": [
+        [
+          "Cairns",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Vaughan",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Cairns\", \"type\": \"ORG\"}, {\"text\": \" 8\", \"type\": \"PER\"}, {\"text\": \" Vaughan\", \"type\": \"PER\"}, {\"text\": \" 9\", \"type\": \"PER\"}, {\"text\": \" Harris\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "8",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Cairns",
+          "ORG"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Vaughan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Astle 9-0-53-1 ( w-1 nb-1 )",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Astle\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Astle",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "New Zealand innings",
+      "gold": [
+        [
+          "New Zealand",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"New Zealand\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "New Zealand",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "B. Young c Moin Khan b Waqar 5",
+      "gold": [
+        [
+          "B. Young",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Waqar",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Young\", \"type\": \"PER\"}, \"text\": \"B\", \"type\": \"PER\"]",
+      "pred": []
+    },
+    {
+      "input": "C. Spearman c Moin Khan b Wasim 0",
+      "gold": [
+        [
+          "C. Spearman",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"C\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "C",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "A. Parore c Ijaz Ahmad b Saqlain 37",
+      "gold": [
+        [
+          "A. Parore",
+          "PER"
+        ],
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Parore\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Parore",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "S. Fleming c and b Afridi 88",
+      "gold": [
+        [
+          "Afridi",
+          "PER"
+        ],
+        [
+          "S. Fleming",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"S\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "S",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "C. Cairns b Saqlain 10",
+      "gold": [
+        [
+          "C. Cairns",
+          "PER"
+        ],
+        [
+          "Saqlain",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Cairns\", \"type\": \"LOC\"}, {\"text\": \" Saqlain\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Cairns",
+          "LOC"
+        ],
+        [
+          "Saqlain",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "N. Astle c Ijaz Ahmad b Salim Malik 20",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "N. Astle",
+          "PER"
+        ],
+        [
+          "Salim Malik",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" N.\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "N.",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "C. Harris lbw b Wasim 22",
+      "gold": [
+        [
+          "C. Harris",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"C\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "C",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "L. Germon lbw b Afridi 2",
+      "gold": [
+        [
+          "Afridi",
+          "PER"
+        ],
+        [
+          "L. Germon",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"L.\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "L.",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "J. Vaughan c Moin Khan b Wasim 13",
+      "gold": [
+        [
+          "J. Vaughan",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"J.\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "J.",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "S. Doull c subs ( M. Wasim ) b Waqar 1",
+      "gold": [
+        [
+          "M. Wasim",
+          "PER"
+        ],
+        [
+          "S. Doull",
+          "PER"
+        ],
+        [
+          "Waqar",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" S. Doull c subs\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "S. Doull c subs",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "R. Kennedy not out 7",
+      "gold": [
+        [
+          "R. Kennedy",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"R.\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "R.",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Extras ( b-9 lb-3 w-12 nb-2 ) 26",
+      "gold": [],
+      "raw": "[{\"text\": \"b-9\", \"type\": \"PER\"}, {\"text\": \"w\", \"type\": \"PER\"}, {\"text\": \"n\", \"type\": \"PER\"}, {\"text\": \"nb\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "b-9",
+          "PER"
+        ],
+        [
+          "n",
+          "PER"
+        ],
+        [
+          "nb",
+          "PER"
+        ],
+        [
+          "w",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Total ( all out in 42.1 overs ) 231",
+      "gold": [],
+      "raw": "[{\"text\": \"total\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "total",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Fall of wickets : 1-3 2-7 3-125 4-146 5-170 6-190 7-195",
+      "gold": [],
+      "raw": "[{\"text\": \"fall\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "fall",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "8-213 9-216 .",
+      "gold": [],
+      "raw": "[{\"text\": \"8-213\", \"type\": \"PER\"}, {\"text\": \"9-216\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "8-213",
+          "PER"
+        ],
+        [
+          "9-216",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Bowling : Wasim Akram 8.1-0-43-3 ( 9w , 1nb ) , Waqar Younis",
+      "gold": [
+        [
+          "Waqar Younis",
+          "PER"
+        ],
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bowling\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Bowling",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "6-0-32-2 ( 2w , 1nb ) , Saqlain Mushtaq 8-0-54-2 , Mushtaq Ahmad",
+      "gold": [
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Saqlain Mushtaq\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Saqlain Mushtaq",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "10-0-42-0 ( 1w ) , Shahid Afridi 7-0-40-2 , Salim Malik 2.5-0-8-1 ,",
+      "gold": [
+        [
+          "Salim Malik",
+          "PER"
+        ],
+        [
+          "Shahid Afridi",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"10-0-42-0\", \"type\": \"PER\"}, \"], \"]\"]",
+      "pred": []
+    },
+    {
+      "input": "Ijaz Ahmad 0.1-0-0-0 .",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ijaz\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Ijaz",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Result : Pakistan won by 46 runs .",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \" Pakistan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Pakistan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Third one-day match : December 8 , in Karachi .",
+      "gold": [
+        [
+          "Karachi",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Third\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Third",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - ENGLISH F.A. CUP SECOND ROUND RESULT .",
+      "gold": [
+        [
+          "ENGLISH F.A. CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"ENGLISH F.A. CUP\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "ENGLISH F.A. CUP",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "[Londonsession1996-12-06]",
+      "pred": []
+    },
+    {
+      "input": "Result of an English F.A. Challenge",
+      "gold": [
+        [
+          "English F.A. Challenge",
+          "MISC"
+        ]
+      ],
+      "raw": "[]",
+      "pred": []
+    },
+    {
+      "input": "Cup second round match on Friday :",
+      "gold": [
+        [
+          "Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Cup\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Cup",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Plymouth 4 Exeter 1",
+      "gold": [
+        [
+          "Exeter",
+          "ORG"
+        ],
+        [
+          "Plymouth",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Pentham\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Pentham",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - BLINKER BAN LIFTED .",
+      "gold": [
+        [
+          "BLINKER",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \"BLINKER BAN\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "BLINKER BAN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "[Londonsession1996-12-06]",
+      "pred": []
+    },
+    {
+      "input": "Dutch forward Reggie Blinker had his indefinite suspension lifted by FIFA on Friday and was set to make his Sheffield Wednesday comeback against Liverpool on Saturday .",
+      "gold": [
+        [
+          "Dutch",
+          "MISC"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Liverpool",
+          "ORG"
+        ],
+        [
+          "Reggie Blinker",
+          "PER"
+        ],
+        [
+          "Sheffield Wednesday",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"reggie\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "reggie",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Blinker missed his club 's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord .",
+      "gold": [
+        [
+          "Blinker",
+          "PER"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Feyenoord",
+          "ORG"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ],
+        [
+          "Wednesday",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Blinker\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Blinker",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "FIFA 's players ' status committee , meeting in Barcelona , decided that although the Udinese document was basically valid , it could not be legally protected .",
+      "gold": [
+        [
+          "Barcelona",
+          "LOC"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"FIFA\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "FIFA",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "The committee said the Italian club had violated regulations by failing to inform Feyenoord , with whom the player was under contract .",
+      "gold": [
+        [
+          "Feyenoord",
+          "ORG"
+        ],
+        [
+          "Italian",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Italian\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Italian",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .",
+      "gold": [
+        [
+          "Blinker",
+          "PER"
+        ],
+        [
+          "Engllsh",
+          "MISC"
+        ],
+        [
+          "Swiss",
+          "MISC"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Engllsh\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Engllsh",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - LEEDS ' BOWYER FINED FOR PART IN FAST-FOOD FRACAS .",
+      "gold": [
+        [
+          "BOWYER",
+          "PER"
+        ],
+        [
+          "LEEDS",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"LEEDs\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "LEEDs",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "[Londonsession1996-12-06]",
+      "pred": []
+    },
+    {
+      "input": "Leeds ' England under-21 striker Lee Bowyer was fined 4,500 pounds ( $ 7,400 ) on Friday for hurling chairs at restaurant staff during a disturbance at a McDonald 's fast-food restaurant .",
+      "gold": [
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Lee Bowyer",
+          "PER"
+        ],
+        [
+          "Leeds",
+          "ORG"
+        ],
+        [
+          "McDonald 's",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \" England \", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "England",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Bowyer , 19 , who was caught in the act by security cameras , pleaded guilty to a charge of affray at a court in London .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "London",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bowyer\", \"type\": \"person\"}, {\"text\": \"19\", \"type\": \"year\"}, {\"text\": \"security\", \"type\": \"verb\"}, {\"text\": \"security\", \"type\": \"verb\"}, {\"text\": \"London\", \"type\": \"city\"}]",
+      "pred": [
+        [
+          "19",
+          "year"
+        ],
+        [
+          "Bowyer",
+          "person"
+        ],
+        [
+          "London",
+          "city"
+        ],
+        [
+          "security",
+          "verb"
+        ]
+      ]
+    },
+    {
+      "input": "He was fined and ordered to pay a total of 175 pounds to two members of staff injured in the fracas in an east London restaurant in October .",
+      "gold": [
+        [
+          "London",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"East London\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "East London",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Leeds had already fined Bowyer 4,000 pounds ( $ 6,600 ) and warned him a repeat of his criminal behaviour could cost him his place in the side .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "Leeds",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Leeds\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Leeds",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Bowyer , who moved to the Yorkshire club in August for 3.5 million pounds ( $ 5.8 million ) , was expected to play against Middlesbrough on Saturday .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "Middlesbrough",
+          "ORG"
+        ],
+        [
+          "Yorkshire",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bowyer\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Bowyer",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "BASKETBALL - EUROLEAGUE STANDINGS .",
+      "gold": [
+        [
+          "EUROLEAGUE",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"EUROLEAGUE\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "EUROLEAGUE",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "[Londonsession1996-12-06]",
+      "pred": []
+    },
+    {
+      "input": "Standings in the men 's EuroLeague",
+      "gold": [
+        [
+          "EuroLeague",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"men\", \"s\", \"EuroLeague\"}]",
+      "pred": []
+    },
+    {
+      "input": "basketball championship after Thursday 's matches ( tabulate under",
+      "gold": [],
+      "raw": "[{\"text\": \"basketball\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "basketball",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "played , won , lost , points ) :",
+      "gold": [],
+      "raw": "[{\"text\": \"played\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "played",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Group A",
+      "gold": [],
+      "raw": "[{\"text\": \"Group A\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Group A",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "CSKA Moscow ( Russia 9 6 3 15",
+      "gold": [
+        [
+          "CSKA Moscow",
+          "ORG"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"CSKA\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "CSKA",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Stefanel Milan ( Italy ) 9 6 3 15",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Stefanel Milan",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Stefanel\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Stefanel",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Maccabi Tel Aviv ( Israel ) 9 5 4 14",
+      "gold": [
+        [
+          "Israel",
+          "LOC"
+        ],
+        [
+          "Maccabi Tel Aviv",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Maccabi\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Maccabi",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Ulker Spor ( Turkey ) 9 4 5 13",
+      "gold": [
+        [
+          "Turkey",
+          "LOC"
+        ],
+        [
+          "Ulker Spor",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\\\"text\\\" \"type\\\"}\\)\"]",
+      "pred": []
+    },
+    {
+      "input": "Limoges ( France ) 9 3 6 12",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Limoges",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Limoges\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Limoges",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Panionios ( Greece ) 9 3 6 12",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Panionios",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Panionios\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Panionios",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Group B",
+      "gold": [],
+      "raw": "[{\"text\": \"Group B\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Group B",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Teamsystem Bologna ( Italy ) 9 7 2 16",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Teamsystem Bologna",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Teamsystem\", \"type\": \"PER\"}, {\"text\": \"Bologna\", \"type\": \"ORG\"}, {\"text\": \"Italia\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Bologna",
+          "ORG"
+        ],
+        [
+          "Italia",
+          "LOC"
+        ],
+        [
+          "Teamsystem",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Olympiakos ( Greece ) 9 5 4 14",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Olympiakos",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Olympiakos\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Olympiakos",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Cibona Zagreb ( Croatia ) 9 5 4 14",
+      "gold": [
+        [
+          "Cibona Zagreb",
+          "ORG"
+        ],
+        [
+          "Croatia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Criba\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Criba",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Alba Berlin ( Germany ) 9 5 4 14",
+      "gold": [
+        [
+          "Alba Berlin",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Alba\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Alba",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Estudiantes Madrid ( Spain ) 9 5 4 14",
+      "gold": [
+        [
+          "Estudiantes Madrid",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Madrid\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Madrid",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Charleroi ( Belgium ) 9 0 9 9",
+      "gold": [
+        [
+          "Belgium",
+          "LOC"
+        ],
+        [
+          "Charleroi",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Charleroi\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Charleroi",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Group C",
+      "gold": [],
+      "raw": "[{\"text\": \"Group C\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Group C",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Panathinaikos ( Greece ) 9 7 2 16",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Panathinaikos",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Panathinaikos\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Panathinaikos",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Ljubljana ( Slovenia ) 9 6 3 15",
+      "gold": [
+        [
+          "Ljubljana",
+          "ORG"
+        ],
+        [
+          "Slovenia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Ljubljana\", \"type\": \"LOC\"}]",
+      "pred": [
+        [
+          "Ljubljana",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Villeurbanne ( France ) 9 6 3 15",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Villeurbanne",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Villeurbanne\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Villeurbanne",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Barcelona ( Spain ) 9 4 5 13",
+      "gold": [
+        [
+          "Barcelona",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Barcelona\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Barcelona",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Split ( Croatia ) 9 4 5 13",
+      "gold": [
+        [
+          "Croatia",
+          "LOC"
+        ],
+        [
+          "Split",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Split\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Split",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Bayer Leverkusen ( Germany ) 9 0 9 9",
+      "gold": [
+        [
+          "Bayer Leverkusen",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Bayer Leverkusen\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Bayer Leverkusen",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Group D",
+      "gold": [],
+      "raw": "[{\"text\": \"Group D\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Group D",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Efes Pilsen ( Turkey ) 9 7 2 16",
+      "gold": [
+        [
+          "Efes Pilsen",
+          "ORG"
+        ],
+        [
+          "Turkey",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Efes Pilsen\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Efes Pilsen",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Pau-Orthez ( France ) 9 5 4 14",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Pau-Orthez",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Pau-Ormathz\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Pau-Ormathz",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Partizan Belgrade ( Yugoslavia ) 9 5 4 14",
+      "gold": [
+        [
+          "Partizan Belgrade",
+          "ORG"
+        ],
+        [
+          "Yugoslavia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Partizan\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Partizan",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Kinder Bologna ( Italy ) 9 4 5 13",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Kinder Bologna",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Kinder\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Kinder",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Sevilla ( Spain ) 9 4 5 13",
+      "gold": [
+        [
+          "Sevilla",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Sevilla\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Sevilla",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Dynamo Moscow ( Russia ) 9 2 7 11",
+      "gold": [
+        [
+          "Dynamo Moscow",
+          "ORG"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Dynamo\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Dynamo",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "RUGBY UNION - LITTLE TO MISS CAMPESE FAREWELL .",
+      "gold": [
+        [
+          "CAMPESE",
+          "PER"
+        ],
+        [
+          "LITTLE",
+          "PER"
+        ],
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"RUGBY UNION\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Robert Kitson",
+      "gold": [
+        [
+          "Robert Kitson",
+          "PER"
+        ]
+      ],
+      "raw": "[{\"text\": \" Robert Kitson\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Robert Kitson",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "[Londonsession1996-12-06]",
+      "pred": []
+    },
+    {
+      "input": "Centre Jason Little will miss Australia 's end-of-tour fixture against the Barbarians at Twickenham on Saturday .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Barbarians",
+          "ORG"
+        ],
+        [
+          "Jason Little",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Jason\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Jason",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Little has opted not to risk aggravating the knee injury which ruled him out of a large chunk of the tour and is replaced by fellow Queenslander Daniel Herbert .",
+      "gold": [
+        [
+          "Daniel Herbert",
+          "PER"
+        ],
+        [
+          "Little",
+          "PER"
+        ],
+        [
+          "Queenslander",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Little\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Little",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Owen Finegan has recovered from the knocks he took in last weekend 's test against Wales and retains his place in the back-row ahead of Daniel Manu .",
+      "gold": [
+        [
+          "Daniel Manu",
+          "PER"
+        ],
+        [
+          "Owen Finegan",
+          "PER"
+        ],
+        [
+          "Wales",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Owen Finegan\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Owen Finegan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "The Wallabies have their sights set on a 13th successive victory to end their European tour with a 100 percent record but also want to turn on the style and provide David Campese with a fitting send-off in his final match in Australian colours .",
+      "gold": [
+        [
+          "Australian",
+          "MISC"
+        ],
+        [
+          "David Campese",
+          "PER"
+        ],
+        [
+          "European",
+          "MISC"
+        ],
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Wallabies\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "The Wallabies currently have no plans to make any special presentation to the 34-year-old winger but a full house of 75,000 spectators will still gather in the hope of witnessing one last moment of magic .",
+      "gold": [
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ],
+      "raw": "[{\"text\": \"Wallabies\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Campese will be up against a familiar foe in the shape of Barbarians captain Rob Andrew , the man who kicked Australia to defeat with a last-ditch drop-goal in the World Cup quarter-final in Cape Town .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Barbarians",
+          "ORG"
+        ],
+        [
+          "Campese",
+          "PER"
+        ],
+        [
+          "Cape Town",
+          "LOC"
+        ],
+        [
+          "Rob Andrew",
+          "PER"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Campese\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Campese",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "\" Campo has a massive following in this country and has had the public with him ever since he first played here in 1984 , \" said Andrew , also likely to be making his final Twickenham appearance .",
+      "gold": [
+        [
+          "Andrew",
+          "PER"
+        ],
+        [
+          "Campo",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Andrew\", \"type\": \"PER\"}]",
+      "pred": [
+        [
+          "Andrew",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "On tour , Australia have won all four tests against Italy , Scotland , Ireland and Wales , and scored 414 points at an average of almost 35 points a game .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Ireland",
+          "LOC"
+        ],
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Scotland",
+          "LOC"
+        ],
+        [
+          "Wales",
+          "LOC"
+        ]
+      ],
+      "raw": "[{\"text\": \"Australia\", \"type\": \"ORG\"}]",
+      "pred": [
+        [
+          "Australia",
+          "ORG"
+        ]
+      ]
+    }
+  ]
+}

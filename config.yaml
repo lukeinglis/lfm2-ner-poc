@@ -3,14 +3,14 @@ model_name: "LiquidAI/LFM2.5-350M"
 training_type: "sft"
 
 dataset:
-  path: "lukeinglis21/conll2003-ner-sft-1k"
+  path: "lukeinglis21/conll2003-ner-sft-8k"
   type: "sft"
   test_size: 0.1
 
 training_config:
   extends: "DEFAULT_SFT"
   num_train_epochs: 3
-  per_device_train_batch_size: 2
+  per_device_train_batch_size: 8
   learning_rate: 2e-5
 
 peft_config:

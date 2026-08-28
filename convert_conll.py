@@ -9,7 +9,7 @@ SYSTEM = (
     "Output only the JSON array, nothing else."
 )
 
-N_TRAIN = 1000
+N_TRAIN = 8000
 N_TEST = 200
 
 

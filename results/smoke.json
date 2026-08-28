@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "model": "LiquidAI/LFM2.5-350M",
+    "n": 3,
+    "strict_json_pct": 0.0,
+    "lenient_json_pct": 100.0,
+    "precision": 0.0909,
+    "recall": 0.2,
+    "f1": 0.125,
+    "median_latency_ms": 3157.8,
+    "device": "mps"
+  },
+  "predictions": [
+    {
+      "input": "SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .",
+      "gold": [
+        [
+          "CHINA",
+          "PER"
+        ],
+        [
+          "JAPAN",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"SOCCER\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"JAPAN\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"GET\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"LUCKY\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"WIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"CHINA\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"SURPRISE\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "CHINA",
+          "ORG"
+        ],
+        [
+          "GET",
+          "LOC"
+        ],
+        [
+          "JAPAN",
+          "ORG"
+        ],
+        [
+          "LUCKY",
+          "MISC"
+        ],
+        [
+          "SOCCER",
+          "PER"
+        ],
+        [
+          "SURPRISE",
+          "MISC"
+        ],
+        [
+          "WIN",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Nadim Ladki",
+      "gold": [
+        [
+          "Nadim Ladki",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Nadim Ladki\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Nadim Ladki",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"AL-AIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"United Arab Emirates\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1996-12-06\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1996-12-06",
+          "LOC"
+        ],
+        [
+          "AL-AIN",
+          "PER"
+        ],
+        [
+          "United Arab Emirates",
+          "ORG"
+        ]
+      ]
+    }
+  ]
+}

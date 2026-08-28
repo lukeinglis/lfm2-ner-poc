@@ -19,6 +19,23 @@ def norm(items):
     return {(d["text"].strip(), d["type"].strip()) for d in items
             if isinstance(d, dict) and "text" in d and "type" in d}
 
+def parse(text, lenient):
+    s = text.strip()
+    if lenient and s.startswith("```"):
+        s = s.split("```")[1]
+        if s.startswith("json"):
+            s = s[4:]
+        s = s.strip()
+    obj = json.loads(s)
+    if isinstance(obj, dict):
+        if not lenient:
+            raise ValueError("not a list")
+        obj = [obj]
+    if not isinstance(obj, list):
+        raise ValueError("not a list")
+    return obj
+
+strict = 0
 valid = 0
 tp = fp = fn = 0
 lat = []
@@ -27,17 +44,23 @@ preds = []
 for i, r in enumerate(rows):
     msgs = r["messages"][:2]
     gold = norm(json.loads(r["messages"][2]["content"]))
-    ids = tok.apply_chat_template(msgs, add_generation_prompt=True, return_tensors="pt").to(dev)
+    enc = tok.apply_chat_template(msgs, add_generation_prompt=True,
+                                  return_tensors="pt", return_dict=True)
+    enc = {k: v.to(dev) for k, v in enc.items()}
+    in_len = enc["input_ids"].shape[-1]
     t0 = time.perf_counter()
     with torch.no_grad():
-        out = model.generate(ids, max_new_tokens=256, do_sample=False,
+        out = model.generate(**enc, max_new_tokens=256, do_sample=False,
                              pad_token_id=tok.eos_token_id)
     lat.append((time.perf_counter() - t0) * 1000)
-    text = tok.decode(out[0][ids.shape[-1]:], skip_special_tokens=True).strip()
+    text = tok.decode(out[0][in_len:], skip_special_tokens=True).strip()
     try:
-        parsed = json.loads(text)
-        assert isinstance(parsed, list)
-        pred = norm(parsed)
+        parse(text, lenient=False)
+        strict += 1
+    except Exception:
+        pass
+    try:
+        pred = norm(parse(text, lenient=True))
         valid += 1
     except Exception:
         pred = set()
@@ -53,7 +76,8 @@ f1 = 2 * prec * rec / (prec + rec) if prec + rec else 0.0
 lat.sort()
 
 res = {"model": a.model, "n": len(rows),
-       "schema_valid_pct": round(100 * valid / len(rows), 2),
+       "strict_json_pct": round(100 * strict / len(rows), 2),
+       "lenient_json_pct": round(100 * valid / len(rows), 2),
        "precision": round(prec, 4), "recall": round(rec, 4), "f1": round(f1, 4),
        "median_latency_ms": round(lat[len(lat) // 2], 1), "device": dev}
 print(json.dumps(res, indent=2))

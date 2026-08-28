@@ -1,0 +1,6062 @@
+{
+  "summary": {
+    "model": "LiquidAI/LFM2.5-350M",
+    "n": 200,
+    "strict_json_pct": 0.0,
+    "lenient_json_pct": 97.0,
+    "precision": 0.1106,
+    "recall": 0.1946,
+    "f1": 0.1411,
+    "median_latency_ms": 3941.9,
+    "device": "mps"
+  },
+  "predictions": [
+    {
+      "input": "SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .",
+      "gold": [
+        [
+          "CHINA",
+          "PER"
+        ],
+        [
+          "JAPAN",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"SOCCER\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"JAPAN\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"GET\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"LUCKY\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"WIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"CHINA\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"SURPRISE\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "CHINA",
+          "ORG"
+        ],
+        [
+          "GET",
+          "LOC"
+        ],
+        [
+          "JAPAN",
+          "ORG"
+        ],
+        [
+          "LUCKY",
+          "MISC"
+        ],
+        [
+          "SOCCER",
+          "PER"
+        ],
+        [
+          "SURPRISE",
+          "MISC"
+        ],
+        [
+          "WIN",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Nadim Ladki",
+      "gold": [
+        [
+          "Nadim Ladki",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Nadim Ladki\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Nadim Ladki",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"AL-AIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"United Arab Emirates\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1996-12-06\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1996-12-06",
+          "LOC"
+        ],
+        [
+          "AL-AIN",
+          "PER"
+        ],
+        [
+          "United Arab Emirates",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Japan began the defence of their Asian Cup title with a lucky 2-1 win against Syria in a Group C championship match on Friday .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syria\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Group C championship\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Friday\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Friday",
+          "LOC"
+        ],
+        [
+          "Group C championship",
+          "PER"
+        ],
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "Syria",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "But China saw their luck desert them in the second match of the group , crashing to a surprise 2-0 defeat to newcomers Uzbekistan .",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"But China saw their luck\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"their luck\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"deserted\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"them\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"second match\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"group\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"crashing\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"to a surprise\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2-0\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "2-0",
+          "MISC"
+        ],
+        [
+          "But China saw their luck",
+          "PER"
+        ],
+        [
+          "crashing",
+          "PER"
+        ],
+        [
+          "deserted",
+          "PER"
+        ],
+        [
+          "group",
+          "PER"
+        ],
+        [
+          "second match",
+          "PER"
+        ],
+        [
+          "their luck",
+          "MISC"
+        ],
+        [
+          "them",
+          "PER"
+        ],
+        [
+          "to a surprise",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "China controlled most of the match and saw several chances missed until the 78th minute when Uzbek striker Igor Shkvyrin took advantage of a misdirected defensive header to lob the ball over the advancing Chinese keeper and into an empty net .",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Chinese",
+          "MISC"
+        ],
+        [
+          "Igor Shkvyrin",
+          "PER"
+        ],
+        [
+          "Uzbek",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"China controlled most of the match\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"saw several chances missed\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"until the 78th minute\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Uzbek striker Igor Shkvyrin took advantage of a misdirected defensive header\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "China controlled most of the match",
+          "PER"
+        ],
+        [
+          "Uzbek striker Igor Shkvyrin took advantage of a misdirected defensive header",
+          "MISC"
+        ],
+        [
+          "saw several chances missed",
+          "MISC"
+        ],
+        [
+          "until the 78th minute",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Oleg Shatskiku made sure of the win in injury time , hitting an unstoppable left foot shot from just outside the area .",
+      "gold": [
+        [
+          "Oleg Shatskiku",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Oleg Shatskiku\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"injury time\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"unstoppable left foot shot\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Oleg Shatskiku",
+          "PER"
+        ],
+        [
+          "injury time",
+          "PER"
+        ],
+        [
+          "unstoppable left foot shot",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "The former Soviet republic was playing in an Asian Cup finals tie for the first time .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Soviet",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"The former Soviet republic\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"was\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"playing\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"in\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Asian Cup finals\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"finals\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"first time\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Asian Cup finals",
+          "PER"
+        ],
+        [
+          "The former Soviet republic",
+          "PER"
+        ],
+        [
+          "finals",
+          "PER"
+        ],
+        [
+          "first time",
+          "MISC"
+        ],
+        [
+          "in",
+          "LOC"
+        ],
+        [
+          "playing",
+          "PER"
+        ],
+        [
+          "was",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Despite winning the Asian Games title two years ago , Uzbekistan are in the finals as outsiders .",
+      "gold": [
+        [
+          "Asian Games",
+          "MISC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Despite winning the Asian Games title two years ago\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Uzbekistan are in the finals as outsiders\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Despite winning the Asian Games title two years ago",
+          "PER"
+        ],
+        [
+          "Uzbekistan are in the finals as outsiders",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Two goals from defensive errors in the last six minutes allowed Japan to come from behind and collect all three points from their opening meeting against Syria .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"two goals\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"defensive errors\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"last six minutes\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"allowed Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"came from behind\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"collect all three points\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "allowed Japan",
+          "PER"
+        ],
+        [
+          "came from behind",
+          "MISC"
+        ],
+        [
+          "collect all three points",
+          "MISC"
+        ],
+        [
+          "defensive errors",
+          "ORG"
+        ],
+        [
+          "last six minutes",
+          "LOC"
+        ],
+        [
+          "two goals",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Takuya Takagi scored the winner in the 88th minute , rising to head a Hiroshige Yanagimoto cross towards the Syrian goal which goalkeeper Salem Bitar appeared to have covered but then allowed to slip into the net .",
+      "gold": [
+        [
+          "Hiroshige Yanagimoto",
+          "PER"
+        ],
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Takuya Takagi scored the winner\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"rising to head a Hiroshige Yanagimoto cross\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syrian goal\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Salem Bitar\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Salem Bitar",
+          "MISC"
+        ],
+        [
+          "Syrian goal",
+          "LOC"
+        ],
+        [
+          "Takuya Takagi scored the winner",
+          "PER"
+        ],
+        [
+          "rising to head a Hiroshige Yanagimoto cross",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "It was the second costly blunder by Syria in four minutes .",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"it\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syria\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"in\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"four\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"minutes\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Syria",
+          "ORG"
+        ],
+        [
+          "four",
+          "PER"
+        ],
+        [
+          "in",
+          "LOC"
+        ],
+        [
+          "it",
+          "PER"
+        ],
+        [
+          "minutes",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Defender Hassan Abbas rose to intercept a long ball into the area in the 84th minute but only managed to divert it into the top corner of Bitar 's goal .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Defender Hassan Abbas\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"rise\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"intercept\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"long ball\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"area\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"84th minute\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"top corner\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "84th minute",
+          "LOC"
+        ],
+        [
+          "Defender Hassan Abbas",
+          "PER"
+        ],
+        [
+          "area",
+          "LOC"
+        ],
+        [
+          "intercept",
+          "PER"
+        ],
+        [
+          "long ball",
+          "PER"
+        ],
+        [
+          "rise",
+          "PER"
+        ],
+        [
+          "top corner",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Nader Jokhadar had given Syria the lead with a well-struck header in the seventh minute .",
+      "gold": [
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Nader Jokhadar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syria\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"the lead\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"seventh\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "ORG"
+        ],
+        [
+          "seventh",
+          "PER"
+        ],
+        [
+          "the lead",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan then laid siege to the Syrian penalty area for most of the game but rarely breached the Syrian defence .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syrian penalty area\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Syrian defence\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "Syrian defence",
+          "MISC"
+        ],
+        [
+          "Syrian penalty area",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Bitar pulled off fine saves whenever they did .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bitar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"fine\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "fine",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan coach Shu Kamo said : ' ' The Syrian own goal proved lucky for us .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Shu Kamo",
+          "PER"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "{\"text\": \"The Syrian own goal proved lucky for us\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "The Syrian own goal proved lucky for us",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "The Syrians scored early and then played defensively and adopted long balls which made it hard for us . '",
+      "gold": [
+        [
+          "Syrians",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Syrians\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"early\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"played\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"defensively\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"adopted\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"long balls\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Syrians",
+          "PER"
+        ],
+        [
+          "adopted",
+          "MISC"
+        ],
+        [
+          "defensively",
+          "PER"
+        ],
+        [
+          "early",
+          "PER"
+        ],
+        [
+          "long balls",
+          "MISC"
+        ],
+        [
+          "played",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "'",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"The sun sets over the mountains\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"The mountains are beautiful\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"The river flows through the valley\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"The city is a hub of activity\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"The park is a popular destination\",\n    \"type\": \"MISC\"\n  }\n]```",
+      "pred": [
+        [
+          "The city is a hub of activity",
+          "ORG"
+        ],
+        [
+          "The mountains are beautiful",
+          "MISC"
+        ],
+        [
+          "The park is a popular destination",
+          "MISC"
+        ],
+        [
+          "The river flows through the valley",
+          "PER"
+        ],
+        [
+          "The sun sets over the mountains",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan , co-hosts of the World Cup in 2002 and ranked 20th in the world by FIFA , are favourites to regain their title here .",
+      "gold": [
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"co-hosts of the World Cup in 2002\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"ranked 20th in the world by FIFA\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "co-hosts of the World Cup in 2002",
+          "ORG"
+        ],
+        [
+          "ranked 20th in the world by FIFA",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Hosts UAE play Kuwait and South Korea take on Indonesia on Saturday in Group A matches .",
+      "gold": [
+        [
+          "Indonesia",
+          "LOC"
+        ],
+        [
+          "Kuwait",
+          "LOC"
+        ],
+        [
+          "South Korea",
+          "LOC"
+        ],
+        [
+          "UAE",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Hosts UAE play Kuwait and South Korea\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"take on\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Indonesia\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Hosts UAE play Kuwait and South Korea",
+          "PER"
+        ],
+        [
+          "Indonesia",
+          "MISC"
+        ],
+        [
+          "take on",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "All four teams are level with one point each from one game .",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"All four teams are level with one point each from one game\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "",
+          "LOC"
+        ],
+        [
+          "",
+          "MISC"
+        ],
+        [
+          "",
+          "PER"
+        ],
+        [
+          "All four teams are level with one point each from one game",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "RUGBY UNION - CUTTITTA BACK FOR ITALY AFTER A YEAR .",
+      "gold": [
+        [
+          "CUTTITTA",
+          "PER"
+        ],
+        [
+          "ITALY",
+          "LOC"
+        ],
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"RUGBY UNION\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"CUTTITTA\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"BACK\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"ITALY\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"AFTER\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "AFTER",
+          "PER"
+        ],
+        [
+          "BACK",
+          "PER"
+        ],
+        [
+          "CUTTITTA",
+          "LOC"
+        ],
+        [
+          "ITALY",
+          "ORG"
+        ],
+        [
+          "RUGBY UNION",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "ROME 1996-12-06",
+      "gold": [
+        [
+          "ROME",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"ROME 1996-12-06\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "ROME 1996-12-06",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Italy recalled Marcello Cuttitta",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Marcello Cuttitta",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Italy\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Italy",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "on Friday for their friendly against Scotland at Murrayfield more than a year after the 30-year-old wing announced he was retiring following differences over selection .",
+      "gold": [
+        [
+          "Murrayfield",
+          "LOC"
+        ],
+        [
+          "Scotland",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"on Friday\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"friendly\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"against Scotland\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Murrayfield\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"more than a year\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"30-year-old wing\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"retirement\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "30-year-old wing",
+          "PER"
+        ],
+        [
+          "Murrayfield",
+          "LOC"
+        ],
+        [
+          "against Scotland",
+          "PER"
+        ],
+        [
+          "friendly",
+          "PER"
+        ],
+        [
+          "more than a year",
+          "PER"
+        ],
+        [
+          "on Friday",
+          "PER"
+        ],
+        [
+          "retirement",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Cuttitta , who trainer George Coste said was certain to play on Saturday week , was named in a 21-man squad lacking only two of the team beaten 54-21 by England at Twickenham last month .",
+      "gold": [
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "George Coste",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Cuttitta\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"George Coste\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Saturday\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"week\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Twickenham\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"54-21\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "54-21",
+          "MISC"
+        ],
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "George Coste",
+          "PER"
+        ],
+        [
+          "Saturday",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ],
+        [
+          "week",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Stefano Bordon is out through illness and Coste said he had dropped back row Corrado Covi , who had been recalled for the England game after five years out of the national team .",
+      "gold": [
+        [
+          "Corrado Covi",
+          "PER"
+        ],
+        [
+          "Coste",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Stefano Bordon",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Stefano Bordon\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Bordon\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Cordon\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Corrado Covi\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"England\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Bordon",
+          "PER"
+        ],
+        [
+          "Cordon",
+          "PER"
+        ],
+        [
+          "Corrado Covi",
+          "MISC"
+        ],
+        [
+          "England",
+          "ORG"
+        ],
+        [
+          "Stefano Bordon",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Cuttitta announced his retirement after the 1995 World Cup , where he took issue with being dropped from the Italy side that faced England in the pool stages .",
+      "gold": [
+        [
+          "1995 World Cup",
+          "MISC"
+        ],
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Italy",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Cuttitta\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1995 World Cup\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Italy\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"England\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"pool stages\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1995 World Cup",
+          "PER"
+        ],
+        [
+          "Cuttitta",
+          "PER"
+        ],
+        [
+          "England",
+          "PER"
+        ],
+        [
+          "Italy",
+          "PER"
+        ],
+        [
+          "pool stages",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Coste said he had approached the player two months ago about a comeback .",
+      "gold": [
+        [
+          "Coste",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Coste\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"approached\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"about a comeback\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Coste",
+          "PER"
+        ],
+        [
+          "about a comeback",
+          "ORG"
+        ],
+        [
+          "approached",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "\" He ended the World Cup on the wrong note , \" Coste said .",
+      "gold": [
+        [
+          "Coste",
+          "PER"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"He ended the World Cup on the wrong note\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Coste said\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Coste said",
+          "MISC"
+        ],
+        [
+          "He ended the World Cup on the wrong note",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "\" I thought it would be useful to have him back and he said he would be available .",
+      "gold": [],
+      "raw": "{\"text\": \"I thought it would be useful to have him back\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "I thought it would be useful to have him back",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "I think now is the right time for him to return . \"",
+      "gold": [],
+      "raw": "{\"text\": \"now\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "now",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Squad : Javier Pertile , Paolo Vaccari , Marcello Cuttitta , Ivan Francescato , Leandro Manteri , Diego Dominguez , Francesco Mazzariol , Alessandro Troncon , Orazio Arancio , Andrea Sgorlon , Massimo Giovanelli , Carlo Checchinato , Walter Cristofoletto , Franco Properzi Curti , Carlo Orlandi , Massimo Cuttitta , Giambatista Croci , Gianluca Guidi , Nicola Mazzucato , Alessandro Moscardi , Andrea Castellani .",
+      "gold": [
+        [
+          "Alessandro Moscardi",
+          "PER"
+        ],
+        [
+          "Alessandro Troncon",
+          "PER"
+        ],
+        [
+          "Andrea Castellani",
+          "PER"
+        ],
+        [
+          "Andrea Sgorlon",
+          "PER"
+        ],
+        [
+          "Carlo Checchinato",
+          "PER"
+        ],
+        [
+          "Carlo Orlandi",
+          "PER"
+        ],
+        [
+          "Diego Dominguez",
+          "PER"
+        ],
+        [
+          "Francesco Mazzariol",
+          "PER"
+        ],
+        [
+          "Franco Properzi Curti",
+          "PER"
+        ],
+        [
+          "Giambatista Croci",
+          "PER"
+        ],
+        [
+          "Gianluca Guidi",
+          "PER"
+        ],
+        [
+          "Ivan Francescato",
+          "PER"
+        ],
+        [
+          "Javier Pertile",
+          "PER"
+        ],
+        [
+          "Leandro Manteri",
+          "PER"
+        ],
+        [
+          "Marcello Cuttitta",
+          "PER"
+        ],
+        [
+          "Massimo Cuttitta",
+          "PER"
+        ],
+        [
+          "Massimo Giovanelli",
+          "PER"
+        ],
+        [
+          "Nicola Mazzucato",
+          "PER"
+        ],
+        [
+          "Orazio Arancio",
+          "PER"
+        ],
+        [
+          "Paolo Vaccari",
+          "PER"
+        ],
+        [
+          "Walter Cristofoletto",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Javier Pertile\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Paolo Vaccari\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Marcello Cuttitta\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Ivan Francescato\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Diego Dominguez\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Francesco Mazzariol\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Alessandro Troncon\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Orazio Arancio\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Andrea Sgorlon\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Carlo Checchinato\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Walter Cristofoletto\",\n    \"type\": \"PER\"",
+      "pred": []
+    },
+    {
+      "input": "SOCCER - LATE GOALS GIVE JAPAN WIN OVER SYRIA .",
+      "gold": [
+        [
+          "JAPAN",
+          "LOC"
+        ],
+        [
+          "SYRIA",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Late goals give Japan a win over Syria\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Late goals give Japan a win over Syria",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"AL-AIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"United Arab Emirates\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1996-12-06\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1996-12-06",
+          "LOC"
+        ],
+        [
+          "AL-AIN",
+          "PER"
+        ],
+        [
+          "United Arab Emirates",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Two goals in the last six minutes gave holders Japan an uninspiring 2-1 Asian Cup victory over Syria on Friday .",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syria\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Asian Cup\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Friday\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Asian Cup",
+          "PER"
+        ],
+        [
+          "Friday",
+          "PER"
+        ],
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "Syria",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Takuya Takagi headed the winner in the 88th minute of the group C game after goalkeeper Salem Bitar spoiled a mistake-free display by allowing the ball to slip under his body .",
+      "gold": [
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Takuya Takagi\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"group C\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"88th minute\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"winner\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Salem Bitar\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "88th minute",
+          "PER"
+        ],
+        [
+          "Salem Bitar",
+          "MISC"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ],
+        [
+          "group C",
+          "ORG"
+        ],
+        [
+          "winner",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "It was the second Syrian defensive blunder in four minutes .",
+      "gold": [
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"second Syrian defensive blunder\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"four minutes\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "four minutes",
+          "LOC"
+        ],
+        [
+          "second Syrian defensive blunder",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Defender Hassan Abbas rose to intercept a long ball into the area in the 84th minute but only managed to divert it into the top corner of Bitar 's goal .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Defender Hassan Abbas\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"rise\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"intercept\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"long ball\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"area\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"84th minute\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"top corner\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "84th minute",
+          "LOC"
+        ],
+        [
+          "Defender Hassan Abbas",
+          "PER"
+        ],
+        [
+          "area",
+          "LOC"
+        ],
+        [
+          "intercept",
+          "PER"
+        ],
+        [
+          "long ball",
+          "PER"
+        ],
+        [
+          "rise",
+          "PER"
+        ],
+        [
+          "top corner",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Syria had taken the lead from their first serious attack in the seventh minute .",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Syria\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"first serious attack\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"seventh minute\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Syria",
+          "PER"
+        ],
+        [
+          "first serious attack",
+          "PER"
+        ],
+        [
+          "seventh minute",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Nader Jokhadar headed a cross from the right by Ammar Awad into the top right corner of Kenichi Shimokawa 's goal .",
+      "gold": [
+        [
+          "Ammar Awad",
+          "PER"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Nader Jokhadar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Ammar Awad\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Kenichi Shimokawa\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"goal\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"top right corner\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Ammar Awad",
+          "ORG"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "LOC"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "goal",
+          "PER"
+        ],
+        [
+          "top right corner",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan then laid siege to the Syrian penalty area and had a goal disallowed for offside in the 16th minute .",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syrian",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Syrian\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"penalty area\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"offside\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"16th minute\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "16th minute",
+          "PER"
+        ],
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "Syrian",
+          "PER"
+        ],
+        [
+          "offside",
+          "MISC"
+        ],
+        [
+          "penalty area",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "A minute later , Bitar produced a good double save , first from Kazuyoshi Miura 's header and then blocked a Takagi follow-up shot .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Kazuyoshi Miura",
+          "PER"
+        ],
+        [
+          "Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bitar produced a good double save\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"first from Kazuyoshi Miura's header\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"then blocked a Takagi follow-up shot\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Bitar produced a good double save",
+          "PER"
+        ],
+        [
+          "first from Kazuyoshi Miura's header",
+          "ORG"
+        ],
+        [
+          "then blocked a Takagi follow-up shot",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Bitar saved well again from Miura in the 37th minute , parrying away his header from a corner .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Miura",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bitar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Miura\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"37th minute\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"header\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "37th minute",
+          "PER"
+        ],
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Miura",
+          "ORG"
+        ],
+        [
+          "header",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Japan started the second half brightly but Bitar denied them an equaliser when he dived to his right to save Naoki Soma 's low drive in the 53rd minute .",
+      "gold": [
+        [
+          "Bitar",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Naoki Soma",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan started the second half brightly\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Bitar denied them an equaliser\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"when he dived to his right\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Naoki Soma's low drive\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Bitar denied them an equaliser",
+          "MISC"
+        ],
+        [
+          "Japan started the second half brightly",
+          "PER"
+        ],
+        [
+          "Naoki Soma's low drive",
+          "MISC"
+        ],
+        [
+          "when he dived to his right",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan : 19 - Kenichi Shimokawa , 2 - Hiroshige Yanagimoto , 3 - Naoki Soma , 4 - Masami Ihara , 5 - Norio Omura , 6 - Motohiro Yamaguchi , 8 - Masakiyo Maezono ( 7 - Yasuto Honda 71 ) , 9 - Takuya Takagi , 10 - Hiroshi Nanami , 11 - Kazuyoshi Miura , 15 - Hiroaki Morishima ( 14 - Masayuki Okano 75 ) .",
+      "gold": [
+        [
+          "Hiroaki Morishima",
+          "PER"
+        ],
+        [
+          "Hiroshi Nanami",
+          "PER"
+        ],
+        [
+          "Hiroshige Yanagimoto",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Kazuyoshi Miura",
+          "PER"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Masakiyo Maezono",
+          "PER"
+        ],
+        [
+          "Masami Ihara",
+          "PER"
+        ],
+        [
+          "Masayuki Okano",
+          "PER"
+        ],
+        [
+          "Motohiro Yamaguchi",
+          "PER"
+        ],
+        [
+          "Naoki Soma",
+          "PER"
+        ],
+        [
+          "Norio Omura",
+          "PER"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ],
+        [
+          "Yasuto Honda",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Kenichi Shimokawa\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Hiroshi Nanami\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Yasuto Honda\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Takuya Takagi\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Kazuyoshi Miura\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Masayuki Okano\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Mascoi Maezono\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Yoshino Honda\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Masato\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Hiroki Morishima\",\n    \"type\": \"HRIO\"\n  },\n  {\n    \"text\": \"Masuke Okano\",\n    \"type\": \"HRIO\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Hiroki Morishima",
+          "HRIO"
+        ],
+        [
+          "Hiroshi Nanami",
+          "PER"
+        ],
+        [
+          "Kazuyoshi Miura",
+          "PER"
+        ],
+        [
+          "Kenichi Shimokawa",
+          "PER"
+        ],
+        [
+          "Masato",
+          "PER"
+        ],
+        [
+          "Masayuki Okano",
+          "MISC"
+        ],
+        [
+          "Mascoi Maezono",
+          "PER"
+        ],
+        [
+          "Masuke Okano",
+          "HRIO"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ],
+        [
+          "Yasuto Honda",
+          "MISC"
+        ],
+        [
+          "Yoshino Honda",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Syria : 24 - Salem Bitar , 3 - Bachar Srour ; 4 - Hassan Abbas , 5 - Tarek Jabban , 6 - Ammar Awad ( 9 - Louay Taleb 69 ) , 8 - Nihad al-Boushi , 10 - Mohammed Afash , 12 - Ali Dib , 13 - Abdul Latif Helou ( 17 - Ammar Rihawiy 46 ) , 14 - Khaled Zaher ; 16 - Nader Jokhadar .",
+      "gold": [
+        [
+          "Abdul Latif Helou",
+          "PER"
+        ],
+        [
+          "Ali Dib",
+          "PER"
+        ],
+        [
+          "Ammar Awad",
+          "PER"
+        ],
+        [
+          "Ammar Rihawiy",
+          "PER"
+        ],
+        [
+          "Bachar Srour",
+          "PER"
+        ],
+        [
+          "Hassan Abbas",
+          "PER"
+        ],
+        [
+          "Khaled Zaher",
+          "PER"
+        ],
+        [
+          "Louay Taleb",
+          "PER"
+        ],
+        [
+          "Mohammed Afash",
+          "PER"
+        ],
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Nihad al-Boushi",
+          "PER"
+        ],
+        [
+          "Salem Bitar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ],
+        [
+          "Tarek Jabban",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Salem Bitar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Bachar Srour\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Hassan Abbas\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Tarek Jabban\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Ammar Awad\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Nihad al-Boushi\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Mohammed Afash\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Ali Dib\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Abdul Latif Helou\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Khaled Zaher\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Nader Jokhadar\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\":",
+      "pred": []
+    },
+    {
+      "input": "FREESTYLE SKIING-WORLD CUP MOGUL RESULTS .",
+      "gold": [
+        [
+          "SKIING-WORLD CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"FREESTYLE SKIING-WORLD CUP\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"MOGUL\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"RESULTS\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "FREESTYLE SKIING-WORLD CUP",
+          "PER"
+        ],
+        [
+          "MOGUL",
+          "ORG"
+        ],
+        [
+          "RESULTS",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "TIGNES , France 1996-12-06",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "TIGNES",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"TIGNES\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "TIGNES",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Results of the World Cup",
+      "gold": [
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"World Cup results\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"European teams\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Brazil\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Germany\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Italy\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"South Africa\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Argentina\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Belgium\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Croatia\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Portugal\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Argentina",
+          "MISC"
+        ],
+        [
+          "Belgium",
+          "PER"
+        ],
+        [
+          "Brazil",
+          "MISC"
+        ],
+        [
+          "Croatia",
+          "LOC"
+        ],
+        [
+          "European teams",
+          "ORG"
+        ],
+        [
+          "France",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "PER"
+        ],
+        [
+          "Italy",
+          "MISC"
+        ],
+        [
+          "Portugal",
+          "PER"
+        ],
+        [
+          "South Africa",
+          "LOC"
+        ],
+        [
+          "World Cup results",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "freestyle skiing moguls competition on Friday :",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"freestyle skiing moguls competition\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Friday\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Friday",
+          "LOC"
+        ],
+        [
+          "freestyle skiing moguls competition",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Men",
+      "gold": [],
+      "raw": "{\"text\": \"Men\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Men",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "1. Jesper Ronnback ( Sweden ) 25.76 points",
+      "gold": [
+        [
+          "Jesper Ronnback",
+          "PER"
+        ],
+        [
+          "Sweden",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Jesper Ronnback (Sweden)\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Jesper Ronnback (Sweden)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "2. Andrei Ivanov ( Russia ) 24.88",
+      "gold": [
+        [
+          "Andrei Ivanov",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Andrei Ivanov (Russia) 24.88\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Andrei Ivanov (Russia) 24.88",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "3. Ryan Johnson ( Canada ) 24.57",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Ryan Johnson",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Ryan Johnson (Canada)\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Ryan Johnson (Canada)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "4. Jean-Luc Brassard ( Canada ) 24.40",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Jean-Luc Brassard",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Jean-Luc Brassard (Canada)\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Jean-Luc Brassard (Canada)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "5. Korneilus Hole ( Norway ) 23.92",
+      "gold": [
+        [
+          "Korneilus Hole",
+          "PER"
+        ],
+        [
+          "Norway",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Korneilus Hole\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Norway\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"23.92\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "23.92",
+          "MISC"
+        ],
+        [
+          "Korneilus Hole",
+          "PER"
+        ],
+        [
+          "Norway",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "6. Jeremie Collomb-Patton ( France ) 23.87",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Jeremie Collomb-Patton",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Jeremie Collomb-Patton\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"23.87\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "23.87",
+          "MISC"
+        ],
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Jeremie Collomb-Patton",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "7. Jim Moran ( U.S. ) 23.25",
+      "gold": [
+        [
+          "Jim Moran",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Jim Moran\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"U.S.\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"23.25\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "23.25",
+          "MISC"
+        ],
+        [
+          "Jim Moran",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "8. Dominick Gauthier ( Canada ) 22.73",
+      "gold": [
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Dominick Gauthier",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Dominick Gauthier\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Canada\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"22.73\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22.73",
+          "MISC"
+        ],
+        [
+          "Canada",
+          "LOC"
+        ],
+        [
+          "Dominick Gauthier",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "9. Johann Gregoire ( France ) 22.58",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Johann Gregoire",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Johann Gregoire\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"22.58\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22.58",
+          "MISC"
+        ],
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Johann Gregoire",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "10. Troy Benson ( U.S. ) 22.56",
+      "gold": [
+        [
+          "Troy Benson",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Troy Benson\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"U.S.\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"22.56\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22.56",
+          "MISC"
+        ],
+        [
+          "Troy Benson",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Women",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Women\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Women",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "1. Tatjana Mittermayer ( Germany ) 24.32",
+      "gold": [
+        [
+          "Germany",
+          "LOC"
+        ],
+        [
+          "Tatjana Mittermayer",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Tatjana Mittermayer\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Tatjana Mittermayer",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "2. Candice Gilg ( France ) 24.31",
+      "gold": [
+        [
+          "Candice Gilg",
+          "PER"
+        ],
+        [
+          "France",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Candice Gilg (France)\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Candice Gilg (France)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "3. Minna Karhu ( Finland ) 24.05",
+      "gold": [
+        [
+          "Finland",
+          "LOC"
+        ],
+        [
+          "Minna Karhu",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Minna Karhu\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Finland\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"24.05\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "24.05",
+          "PER"
+        ],
+        [
+          "Finland",
+          "LOC"
+        ],
+        [
+          "Minna Karhu",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "4. Tae Satoya ( Japan ) 23.75",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Tae Satoya",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Tae Satoya (Japan)\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Tae Satoya (Japan)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "5. Ann Battellle ( U.S. ) 23.56",
+      "gold": [
+        [
+          "Ann Battellle",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Ann Battellle\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"U.S.\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"23.56\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "23.56",
+          "LOC"
+        ],
+        [
+          "Ann Battellle",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "6. Donna Weinbrecht ( U.S. ) 22.48",
+      "gold": [
+        [
+          "Donna Weinbrecht",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Donna Weinbrecht\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"U.S.\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"22.48\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22.48",
+          "LOC"
+        ],
+        [
+          "Donna Weinbrecht",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "7. Liz McIntyre ( U.S. ) 22.00",
+      "gold": [
+        [
+          "Liz McIntyre",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Liz McIntyre\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"U.S.\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"22.00\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22.00",
+          "MISC"
+        ],
+        [
+          "Liz McIntyre",
+          "PER"
+        ],
+        [
+          "U.S.",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "8. Elena Koroleva ( Russia ) 21.77",
+      "gold": [
+        [
+          "Elena Koroleva",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Elena Koroleva\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Russia\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"21.77\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "21.77",
+          "MISC"
+        ],
+        [
+          "Elena Koroleva",
+          "PER"
+        ],
+        [
+          "Russia",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "9. Ljudmila Dymchenko ( Russia ) 21.59",
+      "gold": [
+        [
+          "Ljudmila Dymchenko",
+          "PER"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Ljudmila Dymchenko\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Russia\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"21.59\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "21.59",
+          "MISC"
+        ],
+        [
+          "Ljudmila Dymchenko",
+          "PER"
+        ],
+        [
+          "Russia",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "10. Katleen Allais ( France ) 21.58",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Katleen Allais",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Katleen Allais\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"21.58\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "21.58",
+          "MISC"
+        ],
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Katleen Allais",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - ASIAN CUP GROUP C RESULTS .",
+      "gold": [
+        [
+          "ASIAN CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"ASIAN CUP GROUP C\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"RESULTS\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "ASIAN CUP GROUP C",
+          "PER"
+        ],
+        [
+          "RESULTS",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "AL-AIN , United Arab Emirates 1996-12-06",
+      "gold": [
+        [
+          "AL-AIN",
+          "LOC"
+        ],
+        [
+          "United Arab Emirates",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"AL-AIN\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"United Arab Emirates\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1996-12-06\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1996-12-06",
+          "LOC"
+        ],
+        [
+          "AL-AIN",
+          "PER"
+        ],
+        [
+          "United Arab Emirates",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Results of Asian Cup group C matches played on Friday :",
+      "gold": [
+        [
+          "Asian Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Asian Cup group C matches played on Friday\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"specific match details\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Asian Cup group C matches played on Friday",
+          "PER"
+        ],
+        [
+          "specific match details",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Japan 2 Syria 1 ( halftime 0-1 )",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Syria\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"halftime\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"0-1\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0-1",
+          "MISC"
+        ],
+        [
+          "1",
+          "PER"
+        ],
+        [
+          "2",
+          "ORG"
+        ],
+        [
+          "Japan",
+          "PER"
+        ],
+        [
+          "Syria",
+          "ORG"
+        ],
+        [
+          "halftime",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Scorers :",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Scorers\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Scorers",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan - Hassan Abbas 84 own goal , Takuya Takagi 88 .",
+      "gold": [
+        [
+          "Hassan Abbas",
+          "PER"
+        ],
+        [
+          "Japan",
+          "LOC"
+        ],
+        [
+          "Takuya Takagi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan - Hassan Abbas 84 own goal\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Takuya Takagi 88\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Japan - Hassan Abbas 84 own goal",
+          "PER"
+        ],
+        [
+          "Takuya Takagi 88",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Syria - Nader Jokhadar 7",
+      "gold": [
+        [
+          "Nader Jokhadar",
+          "PER"
+        ],
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Syria\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Syria",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Attendance : 10,000 .",
+      "gold": [],
+      "raw": "{\"text\": \"10,000\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "10,000",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "China 0 Uzbekistan 2 ( halftime 0-0 )",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ],
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"China\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Uzbekistan\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"halftime\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"0-0\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "0-0",
+          "PER"
+        ],
+        [
+          "2",
+          "PER"
+        ],
+        [
+          "China",
+          "PER"
+        ],
+        [
+          "Uzbekistan",
+          "ORG"
+        ],
+        [
+          "halftime",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Scorers : Shkvyrin Igor 78 , Shatskikh Oleg 90",
+      "gold": [
+        [
+          "Shatskikh Oleg",
+          "PER"
+        ],
+        [
+          "Shkvyrin Igor",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Shkvyrin Igor\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Shatskikh Oleg\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Shatskikh Oleg",
+          "PER"
+        ],
+        [
+          "Shkvyrin Igor",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Attendence : 3,000",
+      "gold": [],
+      "raw": "{\"text\": \"3,000\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "3,000",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Standings ( tabulate under played , won , drawn , lost , goals",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"played\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"won\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"drawn\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"lost\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"goals\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "drawn",
+          "LOC"
+        ],
+        [
+          "goals",
+          "PER"
+        ],
+        [
+          "lost",
+          "MISC"
+        ],
+        [
+          "played",
+          "PER"
+        ],
+        [
+          "won",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "for , goals against , points ) :",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"goals\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"against\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"points\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "against",
+          "ORG"
+        ],
+        [
+          "goals",
+          "PER"
+        ],
+        [
+          "points",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Uzbekistan 1 1 0 0 2 0 3",
+      "gold": [
+        [
+          "Uzbekistan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Uzbekistan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "MISC"
+        ],
+        [
+          "1",
+          "PER"
+        ],
+        [
+          "2",
+          "MISC"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "Uzbekistan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Japan 1 1 0 0 2 1 3",
+      "gold": [
+        [
+          "Japan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Japan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "1",
+          "MISC"
+        ],
+        [
+          "1",
+          "PER"
+        ],
+        [
+          "2",
+          "MISC"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "Japan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Syria 1 0 0 1 1 2 0",
+      "gold": [
+        [
+          "Syria",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Syria\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "1",
+          "MISC"
+        ],
+        [
+          "1",
+          "PER"
+        ],
+        [
+          "2",
+          "MISC"
+        ],
+        [
+          "Syria",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "China 1 0 0 1 0 2 0",
+      "gold": [
+        [
+          "China",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"China\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "1",
+          "MISC"
+        ],
+        [
+          "1",
+          "PER"
+        ],
+        [
+          "2",
+          "MISC"
+        ],
+        [
+          "China",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "CRICKET - PAKISTAN V NEW ZEALAND ONE-DAY SCOREBOARD .",
+      "gold": [
+        [
+          "NEW ZEALAND",
+          "LOC"
+        ],
+        [
+          "PAKISTAN",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"CRICKET\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"PAKISTAN\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"NEW ZEALAND\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"ONE-DAY\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "CRICKET",
+          "PER"
+        ],
+        [
+          "NEW ZEALAND",
+          "ORG"
+        ],
+        [
+          "ONE-DAY",
+          "LOC"
+        ],
+        [
+          "PAKISTAN",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "[ CORRECTED 14:06 GMT ]",
+      "gold": [
+        [
+          "GMT",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Corrected 14:06 GMT\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"GMT\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"14:06\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"14:06 GMT\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14:06",
+          "LOC"
+        ],
+        [
+          "14:06 GMT",
+          "PER"
+        ],
+        [
+          "Corrected 14:06 GMT",
+          "PER"
+        ],
+        [
+          "GMT",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "SIALKOT , Pakistan 1996-12-06",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ],
+        [
+          "SIALKOT",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Sialkot, Pakistan\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Sialkot, Pakistan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Scoreboard in the second",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Scoreboard in the second\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Scoreboard in the second",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "one-day cricket international between Pakistan and New Zealand",
+      "gold": [
+        [
+          "New Zealand",
+          "LOC"
+        ],
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"one-day cricket international\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Pakistan\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"New Zealand\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"India\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "India",
+          "MISC"
+        ],
+        [
+          "New Zealand",
+          "ORG"
+        ],
+        [
+          "Pakistan",
+          "ORG"
+        ],
+        [
+          "one-day cricket international",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "on Friday :",
+      "gold": [],
+      "raw": "{\"text\": \"on Friday\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "on Friday",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Pakistan",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Pakistan\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Pakistan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Saeed Anwar run out 91 ( corrects from 90 )",
+      "gold": [
+        [
+          "Saeed Anwar",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Saeed Anwar\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Saeed Anwar",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Zahoor Elahi b Cairns 86 ( corrects from 87 )",
+      "gold": [
+        [
+          "Cairns",
+          "PER"
+        ],
+        [
+          "Zahoor Elahi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Zahoor Elahi\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Cairns\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"86\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"corrects\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "86",
+          "PER"
+        ],
+        [
+          "Cairns",
+          "LOC"
+        ],
+        [
+          "Zahoor Elahi",
+          "PER"
+        ],
+        [
+          "corrects",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Ijaz Ahmad c Spearman b Vaughan 59",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "Spearman",
+          "PER"
+        ],
+        [
+          "Vaughan",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Ijaz Ahmad\", \"type\": \"PER\"}  \n{\"text\": \"Spearman\", \"type\": \"PER\"}  \n{\"text\": \"Vaughan\", \"type\": \"PER\"}  \n{\"text\": \"59\", \"type\": \"MISC\"}",
+      "pred": []
+    },
+    {
+      "input": "Inzamamul Haq st Germon b Astle 2",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ],
+        [
+          "Germon",
+          "PER"
+        ],
+        [
+          "Inzamamul Haq",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Inzamamul Haq st Germon\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Germon\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Astle\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Astle",
+          "MISC"
+        ],
+        [
+          "Germon",
+          "LOC"
+        ],
+        [
+          "Inzamamul Haq st Germon",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Wasim Akram b Harris 4",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Wasim Akram b Harris 4\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Wasim Akram b Harris 4",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Shahid Afridi b Harris 2",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Shahid Afridi",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Shahid Afridi b Harris 2\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Shahid Afridi b Harris 2",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Moin Khan c Astle b Harris 1",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Moin Khan c Astle b Harris\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Moin Khan c Astle b Harris",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Waqar Younis st Germon b Harris 0",
+      "gold": [
+        [
+          "Germon",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Waqar Younis",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Waqar Younis\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Germon\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Harris\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Germon",
+          "LOC"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Waqar Younis",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Saqlain Mushtaq b Harris 2",
+      "gold": [
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Saqlain Mushtaq b Harris 2\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Saqlain Mushtaq b Harris 2",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Mushtaq Ahmad not out 5",
+      "gold": [
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Mushtaq Ahmad\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Salim Malik not out 1",
+      "gold": [
+        [
+          "Salim Malik",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Salim Malik\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Salim Malik",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Extras ( lb-8 nb-2 w-14 ) 24",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"extras\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"lb-8\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"nb-2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"w-14\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"24\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "24",
+          "PER"
+        ],
+        [
+          "extras",
+          "PER"
+        ],
+        [
+          "lb-8",
+          "LOC"
+        ],
+        [
+          "nb-2",
+          "MISC"
+        ],
+        [
+          "w-14",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Total ( for 9 wickets in 47 overs ) 277",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Total\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9 wickets\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"47 overs\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"277\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "277",
+          "MISC"
+        ],
+        [
+          "47 overs",
+          "LOC"
+        ],
+        [
+          "9 wickets",
+          "ORG"
+        ],
+        [
+          "Total",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Fall of wicket : 1-177 ( corrects from 1-178 ) 2-225 3-240 4-247 5-252 6-260 7-261 8-269 9-276",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Fall of wicket\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1-177\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2-225\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3-240\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4-247\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"5-252\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"6-260\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"7-261\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"8-269\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9-276\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1-177",
+          "PER"
+        ],
+        [
+          "2-225",
+          "PER"
+        ],
+        [
+          "3-240",
+          "PER"
+        ],
+        [
+          "4-247",
+          "MISC"
+        ],
+        [
+          "5-252",
+          "MISC"
+        ],
+        [
+          "6-260",
+          "MISC"
+        ],
+        [
+          "7-261",
+          "PER"
+        ],
+        [
+          "8-269",
+          "PER"
+        ],
+        [
+          "9-276",
+          "PER"
+        ],
+        [
+          "Fall of wicket",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Bowling : Doull 8-1-60-0 ( w-3 ) , Kennedy 3-0-24-0 ( w-7 nb-1 ) ,",
+      "gold": [
+        [
+          "Doull",
+          "PER"
+        ],
+        [
+          "Kennedy",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Doull\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Kennedy\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"8-1-60-0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"w-3\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7-nb-1\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "7-nb-1",
+          "MISC"
+        ],
+        [
+          "8-1-60-0",
+          "PER"
+        ],
+        [
+          "Doull",
+          "PER"
+        ],
+        [
+          "Kennedy",
+          "PER"
+        ],
+        [
+          "w-3",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Cairns 8-1-35-1 ( w-2 ) , Vaughan 9-1-55-1 , Harris 10-0-42-5 ( w-1 ) ,",
+      "gold": [
+        [
+          "Cairns",
+          "PER"
+        ],
+        [
+          "Harris",
+          "PER"
+        ],
+        [
+          "Vaughan",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Cairns\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"8\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"35\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"55\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"42\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"10\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"w-2\",\n    \"type\": \"W\"\n  },\n  {\n    \"text\": \"vaughan\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9",
+      "pred": []
+    },
+    {
+      "input": "Astle 9-0-53-1 ( w-1 nb-1 )",
+      "gold": [
+        [
+          "Astle",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Astle 9-0-53-1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"w-1\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"nb-1\",\n    \"type\": \"MISC\"\n  }\n]```",
+      "pred": [
+        [
+          "Astle 9-0-53-1",
+          "PER"
+        ],
+        [
+          "nb-1",
+          "MISC"
+        ],
+        [
+          "w-1",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "New Zealand innings",
+      "gold": [
+        [
+          "New Zealand",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"New Zealand innings\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "New Zealand innings",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "B. Young c Moin Khan b Waqar 5",
+      "gold": [
+        [
+          "B. Young",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Waqar",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Young c Moin Khan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Waqar\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "5",
+          "MISC"
+        ],
+        [
+          "Waqar",
+          "PER"
+        ],
+        [
+          "Young c Moin Khan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "C. Spearman c Moin Khan b Wasim 0",
+      "gold": [
+        [
+          "C. Spearman",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Wasim\",\n    \"type\": \"person\"\n  },\n  {\n    \"text\": \"Moin\",\n    \"type\": \"person\"\n  },\n  {\n    \"text\": \"C\",\n    \"type\": \"organization\"\n  },\n  {\n    \"text\": \"Spearman\",\n    \"type\": \"person\"\n  }\n]\n```",
+      "pred": [
+        [
+          "C",
+          "organization"
+        ],
+        [
+          "Moin",
+          "person"
+        ],
+        [
+          "Spearman",
+          "person"
+        ],
+        [
+          "Wasim",
+          "person"
+        ]
+      ]
+    },
+    {
+      "input": "A. Parore c Ijaz Ahmad b Saqlain 37",
+      "gold": [
+        [
+          "A. Parore",
+          "PER"
+        ],
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Parore c Ijaz Ahmad\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Saqlain\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"37\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "37",
+          "PER"
+        ],
+        [
+          "Parore c Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "S. Fleming c and b Afridi 88",
+      "gold": [
+        [
+          "Afridi",
+          "PER"
+        ],
+        [
+          "S. Fleming",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"S. Fleming c and b Afridi 88\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "S. Fleming c and b Afridi 88",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "C. Cairns b Saqlain 10",
+      "gold": [
+        [
+          "C. Cairns",
+          "PER"
+        ],
+        [
+          "Saqlain",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Cairns\", \"type\": \"PER\"}\n\n{\"text\": \"Saqlain\", \"type\": \"ORG\"}\n\n{\"text\": \"10\", \"type\": \"PER\"}",
+      "pred": []
+    },
+    {
+      "input": "N. Astle c Ijaz Ahmad b Salim Malik 20",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "N. Astle",
+          "PER"
+        ],
+        [
+          "Salim Malik",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"N. Astle\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Ijaz Ahmad\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Salim Malik\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"20\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "20",
+          "PER"
+        ],
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ],
+        [
+          "N. Astle",
+          "PER"
+        ],
+        [
+          "Salim Malik",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "C. Harris lbw b Wasim 22",
+      "gold": [
+        [
+          "C. Harris",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Wasim\",\n    \"type\": \"person\"\n  },\n  {\n    \"text\": \"B\",\n    \"type\": \"number\"\n  },\n  {\n    \"text\": \"lbw\",\n    \"type\": \"motion\"\n  },\n  {\n    \"text\": \"b\",\n    \"type\": \"number\"\n  },\n  {\n    \"text\": \"Wasim\",\n    \"type\": \"person\"\n  },\n  {\n    \"text\": \"22\",\n    \"type\": \"number\"\n  }\n]\n```",
+      "pred": [
+        [
+          "22",
+          "number"
+        ],
+        [
+          "B",
+          "number"
+        ],
+        [
+          "Wasim",
+          "person"
+        ],
+        [
+          "b",
+          "number"
+        ],
+        [
+          "lbw",
+          "motion"
+        ]
+      ]
+    },
+    {
+      "input": "L. Germon lbw b Afridi 2",
+      "gold": [
+        [
+          "Afridi",
+          "PER"
+        ],
+        [
+          "L. Germon",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"L. Germon lbw b\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Afridi\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "2",
+          "LOC"
+        ],
+        [
+          "Afridi",
+          "ORG"
+        ],
+        [
+          "L. Germon lbw b",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "J. Vaughan c Moin Khan b Wasim 13",
+      "gold": [
+        [
+          "J. Vaughan",
+          "PER"
+        ],
+        [
+          "Moin Khan",
+          "PER"
+        ],
+        [
+          "Wasim",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"J. Vaughan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Moin\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Khan\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Wasim\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "J. Vaughan",
+          "PER"
+        ],
+        [
+          "Khan",
+          "LOC"
+        ],
+        [
+          "Moin",
+          "ORG"
+        ],
+        [
+          "Wasim",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "S. Doull c subs ( M. Wasim ) b Waqar 1",
+      "gold": [
+        [
+          "M. Wasim",
+          "PER"
+        ],
+        [
+          "S. Doull",
+          "PER"
+        ],
+        [
+          "Waqar",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"S. Doull\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"c\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Subs\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"M. Wasim\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Waqar\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "M. Wasim",
+          "MISC"
+        ],
+        [
+          "S. Doull",
+          "PER"
+        ],
+        [
+          "Subs",
+          "PER"
+        ],
+        [
+          "Waqar",
+          "LOC"
+        ],
+        [
+          "c",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "R. Kennedy not out 7",
+      "gold": [
+        [
+          "R. Kennedy",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"R. Kennedy\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "R. Kennedy",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Extras ( b-9 lb-3 w-12 nb-2 ) 26",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"extras\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"b-9 lb\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"w-12\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"nb-2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"26\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "26",
+          "PER"
+        ],
+        [
+          "b-9 lb",
+          "PER"
+        ],
+        [
+          "extras",
+          "PER"
+        ],
+        [
+          "nb-2",
+          "MISC"
+        ],
+        [
+          "w-12",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Total ( all out in 42.1 overs ) 231",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Total\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"42.1\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"overs\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"231\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "231",
+          "MISC"
+        ],
+        [
+          "42.1",
+          "LOC"
+        ],
+        [
+          "Total",
+          "PER"
+        ],
+        [
+          "overs",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Fall of wickets : 1-3 2-7 3-125 4-146 5-170 6-190 7-195",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Fall of wickets\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1-3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2-7\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3-125\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4-146\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5-170\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6-190\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"7-195\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1-3",
+          "PER"
+        ],
+        [
+          "2-7",
+          "PER"
+        ],
+        [
+          "3-125",
+          "PER"
+        ],
+        [
+          "4-146",
+          "PER"
+        ],
+        [
+          "5-170",
+          "PER"
+        ],
+        [
+          "6-190",
+          "MISC"
+        ],
+        [
+          "7-195",
+          "MISC"
+        ],
+        [
+          "Fall of wickets",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "8-213 9-216 .",
+      "gold": [],
+      "raw": "{\"text\": \"8-213\", \"type\": \"PER\"}  \n{\"text\": \"9-216\", \"type\": \"PER\"}",
+      "pred": []
+    },
+    {
+      "input": "Bowling : Wasim Akram 8.1-0-43-3 ( 9w , 1nb ) , Waqar Younis",
+      "gold": [
+        [
+          "Waqar Younis",
+          "PER"
+        ],
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bowling\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Wasim Akram\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"8.1\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"43\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9w\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1nb\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Waqar Younis\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "1nb",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "43",
+          "PER"
+        ],
+        [
+          "8.1",
+          "PER"
+        ],
+        [
+          "9w",
+          "PER"
+        ],
+        [
+          "Bowling",
+          "PER"
+        ],
+        [
+          "Waqar Younis",
+          "ORG"
+        ],
+        [
+          "Wasim Akram",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "6-0-32-2 ( 2w , 1nb ) , Saqlain Mushtaq 8-0-54-2 , Mushtaq Ahmad",
+      "gold": [
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"6-0-32-2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2w\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1nb\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Saqlain Mushtaq\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"8-0-54-2\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Mushtaq Ahmad\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1nb",
+          "MISC"
+        ],
+        [
+          "2w",
+          "ORG"
+        ],
+        [
+          "6-0-32-2",
+          "PER"
+        ],
+        [
+          "8-0-54-2",
+          "MISC"
+        ],
+        [
+          "Mushtaq Ahmad",
+          "PER"
+        ],
+        [
+          "Saqlain Mushtaq",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "10-0-42-0 ( 1w ) , Shahid Afridi 7-0-40-2 , Salim Malik 2.5-0-8-1 ,",
+      "gold": [
+        [
+          "Salim Malik",
+          "PER"
+        ],
+        [
+          "Shahid Afridi",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"10-0-42-0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Shahid Afridi\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7-0-40-2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Salim Malik\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"2.5-0-8-1\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "10-0-42-0",
+          "PER"
+        ],
+        [
+          "2.5-0-8-1",
+          "MISC"
+        ],
+        [
+          "7-0-40-2",
+          "PER"
+        ],
+        [
+          "Salim Malik",
+          "MISC"
+        ],
+        [
+          "Shahid Afridi",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Ijaz Ahmad 0.1-0-0-0 .",
+      "gold": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Ijaz Ahmad\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Ijaz Ahmad",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Result : Pakistan won by 46 runs .",
+      "gold": [
+        [
+          "Pakistan",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"Pakistan\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Pakistan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Third one-day match : December 8 , in Karachi .",
+      "gold": [
+        [
+          "Karachi",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Third one-day match\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"December 8\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "December 8",
+          "LOC"
+        ],
+        [
+          "Third one-day match",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - ENGLISH F.A. CUP SECOND ROUND RESULT .",
+      "gold": [
+        [
+          "ENGLISH F.A. CUP",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Second Round\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Second Round",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"LONDON\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "LONDON",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Result of an English F.A. Challenge",
+      "gold": [
+        [
+          "English F.A. Challenge",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"The English F.A. Challenge\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "The English F.A. Challenge",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Cup second round match on Friday :",
+      "gold": [
+        [
+          "Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Cup second round match\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Friday\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Cup second round match",
+          "PER"
+        ],
+        [
+          "Friday",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Plymouth 4 Exeter 1",
+      "gold": [
+        [
+          "Exeter",
+          "ORG"
+        ],
+        [
+          "Plymouth",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Plymouth\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Exeter\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"1\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1",
+          "MISC"
+        ],
+        [
+          "Exeter",
+          "PER"
+        ],
+        [
+          "Plymouth",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - BLINKER BAN LIFTED .",
+      "gold": [
+        [
+          "BLINKER",
+          "PER"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Blinker Banned\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Blinker Banned",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"LONDON\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "LONDON",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Dutch forward Reggie Blinker had his indefinite suspension lifted by FIFA on Friday and was set to make his Sheffield Wednesday comeback against Liverpool on Saturday .",
+      "gold": [
+        [
+          "Dutch",
+          "MISC"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Liverpool",
+          "ORG"
+        ],
+        [
+          "Reggie Blinker",
+          "PER"
+        ],
+        [
+          "Sheffield Wednesday",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Reggie Blinker\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Dutch forward\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Reggie Blinker\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Sheffield Wednesday\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Liverpool\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Saturday\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Dutch forward",
+          "ORG"
+        ],
+        [
+          "Liverpool",
+          "PER"
+        ],
+        [
+          "Reggie Blinker",
+          "LOC"
+        ],
+        [
+          "Reggie Blinker",
+          "PER"
+        ],
+        [
+          "Saturday",
+          "PER"
+        ],
+        [
+          "Sheffield Wednesday",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Blinker missed his club 's last two games after FIFA slapped a worldwide ban on him for appearing to sign contracts for both Wednesday and Udinese while he was playing for Feyenoord .",
+      "gold": [
+        [
+          "Blinker",
+          "PER"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Feyenoord",
+          "ORG"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ],
+        [
+          "Wednesday",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Blinker\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"club\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"last two games\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"FIFA\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"signing contracts\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Blinker",
+          "PER"
+        ],
+        [
+          "FIFA",
+          "PER"
+        ],
+        [
+          "club",
+          "PER"
+        ],
+        [
+          "last two games",
+          "PER"
+        ],
+        [
+          "signing contracts",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "FIFA 's players ' status committee , meeting in Barcelona , decided that although the Udinese document was basically valid , it could not be legally protected .",
+      "gold": [
+        [
+          "Barcelona",
+          "LOC"
+        ],
+        [
+          "FIFA",
+          "ORG"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"status committee\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Barcelona\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Udinese\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Barcelona",
+          "LOC"
+        ],
+        [
+          "Udinese",
+          "PER"
+        ],
+        [
+          "status committee",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "The committee said the Italian club had violated regulations by failing to inform Feyenoord , with whom the player was under contract .",
+      "gold": [
+        [
+          "Feyenoord",
+          "ORG"
+        ],
+        [
+          "Italian",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"The committee\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Italian club\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Feyenoord\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"player\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Feyenoord",
+          "PER"
+        ],
+        [
+          "Italian club",
+          "PER"
+        ],
+        [
+          "The committee",
+          "PER"
+        ],
+        [
+          "player",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Blinker was fined 75,000 Swiss francs ( $ 57,600 ) for failing to inform the Engllsh club of his previous commitment to Udinese .",
+      "gold": [
+        [
+          "Blinker",
+          "PER"
+        ],
+        [
+          "Engllsh",
+          "MISC"
+        ],
+        [
+          "Swiss",
+          "MISC"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"fined\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"75,000\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Swiss francs\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Engllsh club\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Udinese\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "75,000",
+          "PER"
+        ],
+        [
+          "Engllsh club",
+          "PER"
+        ],
+        [
+          "Swiss francs",
+          "MISC"
+        ],
+        [
+          "Udinese",
+          "ORG"
+        ],
+        [
+          "fined",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "SOCCER - LEEDS ' BOWYER FINED FOR PART IN FAST-FOOD FRACAS .",
+      "gold": [
+        [
+          "BOWYER",
+          "PER"
+        ],
+        [
+          "LEEDS",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"BOWYER\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"LEEDS\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"BOWYER FINED\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "BOWYER",
+          "PER"
+        ],
+        [
+          "BOWYER FINED",
+          "MISC"
+        ],
+        [
+          "LEEDS",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"LONDON\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "LONDON",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Leeds ' England under-21 striker Lee Bowyer was fined 4,500 pounds ( $ 7,400 ) on Friday for hurling chairs at restaurant staff during a disturbance at a McDonald 's fast-food restaurant .",
+      "gold": [
+        [
+          "England",
+          "LOC"
+        ],
+        [
+          "Lee Bowyer",
+          "PER"
+        ],
+        [
+          "Leeds",
+          "ORG"
+        ],
+        [
+          "McDonald 's",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Leeds ' England under-21 striker Lee Bowyer\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"hurling chairs\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"restaurant staff\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"McDonald's fast-food restaurant\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Leeds ' England under-21 striker Lee Bowyer",
+          "PER"
+        ],
+        [
+          "McDonald's fast-food restaurant",
+          "ORG"
+        ],
+        [
+          "hurling chairs",
+          "MISC"
+        ],
+        [
+          "restaurant staff",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Bowyer , 19 , who was caught in the act by security cameras , pleaded guilty to a charge of affray at a court in London .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "London",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bowyer\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"19\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"caught\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"in\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"security\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"cameras\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"affray\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "19",
+          "PER"
+        ],
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "affray",
+          "MISC"
+        ],
+        [
+          "cameras",
+          "MISC"
+        ],
+        [
+          "caught",
+          "PER"
+        ],
+        [
+          "in",
+          "PER"
+        ],
+        [
+          "security",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "He was fined and ordered to pay a total of 175 pounds to two members of staff injured in the fracas in an east London restaurant in October .",
+      "gold": [
+        [
+          "London",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"fined\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"ordered to pay\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"two members of staff\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"injured\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"in the fracas\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"an east London restaurant\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"in October\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "an east London restaurant",
+          "LOC"
+        ],
+        [
+          "fined",
+          "PER"
+        ],
+        [
+          "in October",
+          "PER"
+        ],
+        [
+          "in the fracas",
+          "LOC"
+        ],
+        [
+          "injured",
+          "MISC"
+        ],
+        [
+          "ordered to pay",
+          "PER"
+        ],
+        [
+          "two members of staff",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Leeds had already fined Bowyer 4,000 pounds ( $ 6,600 ) and warned him a repeat of his criminal behaviour could cost him his place in the side .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "Leeds",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bowyer\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4,000 pounds\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"warned him\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "4,000 pounds",
+          "PER"
+        ],
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "warned him",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "Bowyer , who moved to the Yorkshire club in August for 3.5 million pounds ( $ 5.8 million ) , was expected to play against Middlesbrough on Saturday .",
+      "gold": [
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "Middlesbrough",
+          "ORG"
+        ],
+        [
+          "Yorkshire",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bowyer\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Yorkshire club\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"August\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"3.5 million pounds\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Middlesbrough\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Saturday\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "3.5 million pounds",
+          "PER"
+        ],
+        [
+          "August",
+          "LOC"
+        ],
+        [
+          "Bowyer",
+          "PER"
+        ],
+        [
+          "Middlesbrough",
+          "MISC"
+        ],
+        [
+          "Saturday",
+          "LOC"
+        ],
+        [
+          "Yorkshire club",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "BASKETBALL - EUROLEAGUE STANDINGS .",
+      "gold": [
+        [
+          "EUROLEAGUE",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"EUROLEAGUE\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"STANDINGS\",\n    \"type\": \"ORG\"\n  }\n]\n```",
+      "pred": [
+        [
+          "EUROLEAGUE",
+          "PER"
+        ],
+        [
+          "STANDINGS",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"LONDON\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "LONDON",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Standings in the men 's EuroLeague",
+      "gold": [
+        [
+          "EuroLeague",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"League Rankings\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Top Teams\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Head-to-Head Results\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Head-to-Head Results",
+          "MISC"
+        ],
+        [
+          "League Rankings",
+          "PER"
+        ],
+        [
+          "Top Teams",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "basketball championship after Thursday 's matches ( tabulate under",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"basketball championship\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Thursday's matches\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"after\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"specific\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Thursday's matches",
+          "ORG"
+        ],
+        [
+          "after",
+          "PER"
+        ],
+        [
+          "basketball championship",
+          "PER"
+        ],
+        [
+          "specific",
+          "MISC"
+        ]
+      ]
+    },
+    {
+      "input": "played , won , lost , points ) :",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"played\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"won\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"lost\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"points\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "lost",
+          "LOC"
+        ],
+        [
+          "played",
+          "PER"
+        ],
+        [
+          "points",
+          "MISC"
+        ],
+        [
+          "won",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Group A",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Group A\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"organization\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"North America\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Europe\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Europe",
+          "MISC"
+        ],
+        [
+          "Group A",
+          "PER"
+        ],
+        [
+          "North America",
+          "LOC"
+        ],
+        [
+          "organization",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "CSKA Moscow ( Russia 9 6 3 15",
+      "gold": [
+        [
+          "CSKA Moscow",
+          "ORG"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"CSKA Moscow\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Russia\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"15\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "15",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "CSKA Moscow",
+          "PER"
+        ],
+        [
+          "Russia",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Stefanel Milan ( Italy ) 9 6 3 15",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Stefanel Milan",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Stefanel Milan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Italy\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"15\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "15",
+          "MISC"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Italy",
+          "PER"
+        ],
+        [
+          "Stefanel Milan",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Maccabi Tel Aviv ( Israel ) 9 5 4 14",
+      "gold": [
+        [
+          "Israel",
+          "LOC"
+        ],
+        [
+          "Maccabi Tel Aviv",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Maccabi Tel Aviv\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Israel\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Israel",
+          "LOC"
+        ],
+        [
+          "Maccabi Tel Aviv",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Ulker Spor ( Turkey ) 9 4 5 13",
+      "gold": [
+        [
+          "Turkey",
+          "LOC"
+        ],
+        [
+          "Ulker Spor",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Ulker Spor (Turkey)\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "13",
+          "MISC"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Ulker Spor (Turkey)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Limoges ( France ) 9 3 6 12",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Limoges",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Limoges\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"12\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "12",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "France",
+          "ORG"
+        ],
+        [
+          "Limoges",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Panionios ( Greece ) 9 3 6 12",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Panionios",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Panionios\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Greece\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"12\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "12",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Greece",
+          "ORG"
+        ],
+        [
+          "Panionios",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Group B",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Group B\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"B\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"B\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "B",
+          "MISC"
+        ],
+        [
+          "B",
+          "ORG"
+        ],
+        [
+          "Group B",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Teamsystem Bologna ( Italy ) 9 7 2 16",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Teamsystem Bologna",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Teamsystem Bologna (Italy)\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"16\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "16",
+          "MISC"
+        ],
+        [
+          "2",
+          "PER"
+        ],
+        [
+          "7",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Teamsystem Bologna (Italy)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Olympiakos ( Greece ) 9 5 4 14",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Olympiakos",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Olympiakos (Greece)\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "MISC"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Olympiakos (Greece)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Cibona Zagreb ( Croatia ) 9 5 4 14",
+      "gold": [
+        [
+          "Cibona Zagreb",
+          "ORG"
+        ],
+        [
+          "Croatia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Cibona Zagreb\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Zagreb\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Croatia\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Cibona Zagreb",
+          "PER"
+        ],
+        [
+          "Croatia",
+          "PER"
+        ],
+        [
+          "Zagreb",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Alba Berlin ( Germany ) 9 5 4 14",
+      "gold": [
+        [
+          "Alba Berlin",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Alba Berlin\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Germany\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Alba Berlin",
+          "PER"
+        ],
+        [
+          "Germany",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Estudiantes Madrid ( Spain ) 9 5 4 14",
+      "gold": [
+        [
+          "Estudiantes Madrid",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Estudiantes Madrid (Spain)\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "MISC"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Estudiantes Madrid (Spain)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Charleroi ( Belgium ) 9 0 9 9",
+      "gold": [
+        [
+          "Belgium",
+          "LOC"
+        ],
+        [
+          "Charleroi",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Charleroi\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Belgium\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "9",
+          "MISC"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Belgium",
+          "ORG"
+        ],
+        [
+          "Charleroi",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Group C",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Group C\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"C\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"C\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "C",
+          "MISC"
+        ],
+        [
+          "C",
+          "ORG"
+        ],
+        [
+          "Group C",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Panathinaikos ( Greece ) 9 7 2 16",
+      "gold": [
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Panathinaikos",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Panathinaikos\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Greece\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"16\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "16",
+          "MISC"
+        ],
+        [
+          "2",
+          "PER"
+        ],
+        [
+          "7",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Greece",
+          "LOC"
+        ],
+        [
+          "Panathinaikos",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Ljubljana ( Slovenia ) 9 6 3 15",
+      "gold": [
+        [
+          "Ljubljana",
+          "ORG"
+        ],
+        [
+          "Slovenia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Ljubljana\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Slovenia\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"15\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "15",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Ljubljana",
+          "PER"
+        ],
+        [
+          "Slovenia",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Villeurbanne ( France ) 9 6 3 15",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Villeurbanne",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Villeurbanne\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"6\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"3\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"15\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "15",
+          "PER"
+        ],
+        [
+          "3",
+          "PER"
+        ],
+        [
+          "6",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "France",
+          "ORG"
+        ],
+        [
+          "Villeurbanne",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Barcelona ( Spain ) 9 4 5 13",
+      "gold": [
+        [
+          "Barcelona",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Barcelona\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Spain\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "13",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Barcelona",
+          "PER"
+        ],
+        [
+          "Spain",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Split ( Croatia ) 9 4 5 13",
+      "gold": [
+        [
+          "Croatia",
+          "LOC"
+        ],
+        [
+          "Split",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Croatia\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "13",
+          "MISC"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Croatia",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Bayer Leverkusen ( Germany ) 9 0 9 9",
+      "gold": [
+        [
+          "Bayer Leverkusen",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Bayer Leverkusen\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Germany\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"0\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "0",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Bayer Leverkusen",
+          "ORG"
+        ],
+        [
+          "Germany",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Group D",
+      "gold": [],
+      "raw": "```json\n[\n  {\n    \"text\": \"Group D\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"D\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"Group D\",\n    \"type\": \"LOC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "D",
+          "ORG"
+        ],
+        [
+          "Group D",
+          "LOC"
+        ],
+        [
+          "Group D",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Efes Pilsen ( Turkey ) 9 7 2 16",
+      "gold": [
+        [
+          "Efes Pilsen",
+          "ORG"
+        ],
+        [
+          "Turkey",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Efes Pilsen\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Turkey\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"16\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "16",
+          "MISC"
+        ],
+        [
+          "2",
+          "PER"
+        ],
+        [
+          "7",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Efes Pilsen",
+          "PER"
+        ],
+        [
+          "Turkey",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Pau-Orthez ( France ) 9 5 4 14",
+      "gold": [
+        [
+          "France",
+          "LOC"
+        ],
+        [
+          "Pau-Orthez",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Pau-Orthez\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"France\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "France",
+          "ORG"
+        ],
+        [
+          "Pau-Orthez",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Partizan Belgrade ( Yugoslavia ) 9 5 4 14",
+      "gold": [
+        [
+          "Partizan Belgrade",
+          "ORG"
+        ],
+        [
+          "Yugoslavia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Partizan Belgrade (Yugoslavia)\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"14\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "14",
+          "MISC"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Partizan Belgrade (Yugoslavia)",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Kinder Bologna ( Italy ) 9 4 5 13",
+      "gold": [
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Kinder Bologna",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Kinder Bologna\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Italy\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "13",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Italy",
+          "ORG"
+        ],
+        [
+          "Kinder Bologna",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Sevilla ( Spain ) 9 4 5 13",
+      "gold": [
+        [
+          "Sevilla",
+          "ORG"
+        ],
+        [
+          "Spain",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Sevilla\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Spain\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"4\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"5\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "13",
+          "PER"
+        ],
+        [
+          "4",
+          "PER"
+        ],
+        [
+          "5",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Sevilla",
+          "PER"
+        ],
+        [
+          "Spain",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "Dynamo Moscow ( Russia ) 9 2 7 11",
+      "gold": [
+        [
+          "Dynamo Moscow",
+          "ORG"
+        ],
+        [
+          "Russia",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Dynamo Moscow\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Russia\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"9\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"2\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"7\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"11\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "11",
+          "PER"
+        ],
+        [
+          "2",
+          "PER"
+        ],
+        [
+          "7",
+          "PER"
+        ],
+        [
+          "9",
+          "PER"
+        ],
+        [
+          "Dynamo Moscow",
+          "PER"
+        ],
+        [
+          "Russia",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "RUGBY UNION - LITTLE TO MISS CAMPESE FAREWELL .",
+      "gold": [
+        [
+          "CAMPESE",
+          "PER"
+        ],
+        [
+          "LITTLE",
+          "PER"
+        ],
+        [
+          "RUGBY UNION",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"RUGBY UNION\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"LITTLE TO MISS\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"CAMPESE FAREWELL\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "CAMPESE FAREWELL",
+          "PER"
+        ],
+        [
+          "LITTLE TO MISS",
+          "MISC"
+        ],
+        [
+          "RUGBY UNION",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Robert Kitson",
+      "gold": [
+        [
+          "Robert Kitson",
+          "PER"
+        ]
+      ],
+      "raw": "{\"text\": \"Robert Kitson\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "Robert Kitson",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "LONDON 1996-12-06",
+      "gold": [
+        [
+          "LONDON",
+          "LOC"
+        ]
+      ],
+      "raw": "{\"text\": \"LONDON\", \"type\": \"PER\"}",
+      "pred": [
+        [
+          "LONDON",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Centre Jason Little will miss Australia 's end-of-tour fixture against the Barbarians at Twickenham on Saturday .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Barbarians",
+          "ORG"
+        ],
+        [
+          "Jason Little",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Centre Jason Little\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Australia\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Twickenham\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"Saturday\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Australia",
+          "PER"
+        ],
+        [
+          "Centre Jason Little",
+          "PER"
+        ],
+        [
+          "Saturday",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ]
+    },
+    {
+      "input": "Little has opted not to risk aggravating the knee injury which ruled him out of a large chunk of the tour and is replaced by fellow Queenslander Daniel Herbert .",
+      "gold": [
+        [
+          "Daniel Herbert",
+          "PER"
+        ],
+        [
+          "Little",
+          "PER"
+        ],
+        [
+          "Queenslander",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Little has opted not to risk aggravating the knee injury\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"which ruled him out of a large chunk of the tour\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"of the tour\",\n    \"type\": \"LOC\"\n  },\n  {\n    \"text\": \"fellow Queenslander Daniel Herbert\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Little has opted not to risk aggravating the knee injury",
+          "PER"
+        ],
+        [
+          "fellow Queenslander Daniel Herbert",
+          "MISC"
+        ],
+        [
+          "of the tour",
+          "LOC"
+        ],
+        [
+          "which ruled him out of a large chunk of the tour",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Owen Finegan has recovered from the knocks he took in last weekend 's test against Wales and retains his place in the back-row ahead of Daniel Manu .",
+      "gold": [
+        [
+          "Daniel Manu",
+          "PER"
+        ],
+        [
+          "Owen Finegan",
+          "PER"
+        ],
+        [
+          "Wales",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Owen Finegan\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"last weekend\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"test\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Wales\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"back-row\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Daniel Manu\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Daniel Manu",
+          "PER"
+        ],
+        [
+          "Owen Finegan",
+          "PER"
+        ],
+        [
+          "Wales",
+          "PER"
+        ],
+        [
+          "back-row",
+          "PER"
+        ],
+        [
+          "last weekend",
+          "PER"
+        ],
+        [
+          "test",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "The Wallabies have their sights set on a 13th successive victory to end their European tour with a 100 percent record but also want to turn on the style and provide David Campese with a fitting send-off in his final match in Australian colours .",
+      "gold": [
+        [
+          "Australian",
+          "MISC"
+        ],
+        [
+          "David Campese",
+          "PER"
+        ],
+        [
+          "European",
+          "MISC"
+        ],
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"The Wallabies\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"European tour\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"13th successive victory\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"100 percent record\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Australian colours\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Style\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Send-off\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "100 percent record",
+          "PER"
+        ],
+        [
+          "13th successive victory",
+          "PER"
+        ],
+        [
+          "Australian colours",
+          "MISC"
+        ],
+        [
+          "European tour",
+          "PER"
+        ],
+        [
+          "Send-off",
+          "MISC"
+        ],
+        [
+          "Style",
+          "MISC"
+        ],
+        [
+          "The Wallabies",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "The Wallabies currently have no plans to make any special presentation to the 34-year-old winger but a full house of 75,000 spectators will still gather in the hope of witnessing one last moment of magic .",
+      "gold": [
+        [
+          "Wallabies",
+          "ORG"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"The Wallabies currently have no plans to make any special presentation\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"a full house of 75,000 spectators\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"gather in the hope of witnessing one last moment of magic\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "The Wallabies currently have no plans to make any special presentation",
+          "PER"
+        ],
+        [
+          "a full house of 75,000 spectators",
+          "MISC"
+        ],
+        [
+          "gather in the hope of witnessing one last moment of magic",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "Campese will be up against a familiar foe in the shape of Barbarians captain Rob Andrew , the man who kicked Australia to defeat with a last-ditch drop-goal in the World Cup quarter-final in Cape Town .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Barbarians",
+          "ORG"
+        ],
+        [
+          "Campese",
+          "PER"
+        ],
+        [
+          "Cape Town",
+          "LOC"
+        ],
+        [
+          "Rob Andrew",
+          "PER"
+        ],
+        [
+          "World Cup",
+          "MISC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Campese\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Barbarians\",\n    \"type\": \"MISC\"\n  },\n  {\n    \"text\": \"Rob Andrew\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"World Cup quarter-final\",\n    \"type\": \"PER\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Barbarians",
+          "MISC"
+        ],
+        [
+          "Campese",
+          "PER"
+        ],
+        [
+          "Rob Andrew",
+          "PER"
+        ],
+        [
+          "World Cup quarter-final",
+          "PER"
+        ]
+      ]
+    },
+    {
+      "input": "\" Campo has a massive following in this country and has had the public with him ever since he first played here in 1984 , \" said Andrew , also likely to be making his final Twickenham appearance .",
+      "gold": [
+        [
+          "Andrew",
+          "PER"
+        ],
+        [
+          "Campo",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"Campo has a massive following in this country\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"has had the public with him ever since\",\n    \"type\": \"ORG\"\n  },\n  {\n    \"text\": \"1984\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Twickenham\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "1984",
+          "PER"
+        ],
+        [
+          "Campo has a massive following in this country",
+          "PER"
+        ],
+        [
+          "Twickenham",
+          "MISC"
+        ],
+        [
+          "has had the public with him ever since",
+          "ORG"
+        ]
+      ]
+    },
+    {
+      "input": "On tour , Australia have won all four tests against Italy , Scotland , Ireland and Wales , and scored 414 points at an average of almost 35 points a game .",
+      "gold": [
+        [
+          "Australia",
+          "LOC"
+        ],
+        [
+          "Ireland",
+          "LOC"
+        ],
+        [
+          "Italy",
+          "LOC"
+        ],
+        [
+          "Scotland",
+          "LOC"
+        ],
+        [
+          "Wales",
+          "LOC"
+        ]
+      ],
+      "raw": "```json\n[\n  {\n    \"text\": \"On tour\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Australia\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Italy\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Scotland\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Ireland\",\n    \"type\": \"PER\"\n  },\n  {\n    \"text\": \"Wales\",\n    \"type\": \"MISC\"\n  }\n]\n```",
+      "pred": [
+        [
+          "Australia",
+          "PER"
+        ],
+        [
+          "Ireland",
+          "PER"
+        ],
+        [
+          "Italy",
+          "PER"
+        ],
+        [
+          "On tour",
+          "PER"
+        ],
+        [
+          "Scotland",
+          "PER"
+        ],
+        [
+          "Wales",
+          "MISC"
+        ]
+      ]
+    }
+  ]
+}

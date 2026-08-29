@@ -27,20 +27,26 @@ F1 is entity-level micro F1 over exact `(text, type)` matches. An entity counts
 only if both the span boundaries and the type are correct.
 
 Published state of the art on the original CoNLL-2003 test set is 94.3 F1
-(LUKE, [Yamada et al. 2020](https://arxiv.org/pdf/2010.01057)), using
-entity-aware self-attention over a large pretrained encoder. That number
-isn't directly comparable to this run: it comes from an encoder-only
-sequence-labeling architecture with a CRF/span classifier that optimizes
-per-token tag probabilities directly, not a decoder-only LLM generating
-free-text JSON. The more relevant comparison is small generative LLMs
-producing *structured JSON* output specifically — a 2026 study on generative
-NER ([arXiv:2601.17898](https://arxiv.org/html/2601.17898v1)) found that
-1B-1.7B models forced into strict JSON output score only 12-33 F1, because
-character-offset/schema generation is hard for small decoders in that
-format. Against that baseline, 0.871 F1 from a 350M model doing full JSON
-output is a strong result for the class — plausibly near the ceiling for
-small-LLM JSON-formatted extraction specifically, rather than for CoNLL-2003
-NER in general.
+(LUKE, [Yamada et al. 2020](https://arxiv.org/abs/2010.01057)), a bidirectional
+encoder with entity-aware self-attention and a span classifier. That is a
+different architecture class from a decoder-only model generating JSON, so it
+is best read as an upper reference point rather than a like-for-like target.
+
+The closer comparison is generative NER at small scale, where the *output
+format* turns out to matter enormously. "Assessment of Generative Named Entity
+Recognition in the Era of Large Language Models" (Zhan, Wang and Huang,
+[arXiv:2601.17898](https://arxiv.org/html/2601.17898v1)) evaluates five
+formats. On CoNLL-2003, models in the 1B to 1.7B range reach 90.6 to 91.0 F1
+with inline bracketed output and 89.7 to 90.2 F1 with occurrence-based JSON,
+but collapse to 18.9 to 33.0 F1 with offset-based JSON, which requires
+emitting exact character positions.
+
+The format used here carries no offsets or occurrence indices, so the
+occurrence-based JSON band, roughly 90 F1 at 1B to 1.7B parameters, is the
+fair reference point. At 0.871 this 350M adapter lands about three points
+below that with three to five times fewer parameters. That is a reasonable
+result for the size, but it is not at the ceiling: a larger model using the
+same output format should be expected to beat it.
 
 ## What the runs show
 
@@ -87,31 +93,33 @@ generations (`results/baseline.json`):
   single-entity sentences to a bare object (`{"text": ..., "type": ...}`)
   instead of a one-element list.
 - **Over-generation.** The model predicts 714 spans against 406 gold
-  entities — 76% more — skewing toward whole clauses rather than entities
+  entities, 76% more, skewing toward whole clauses rather than entities
   (avg. predicted span 1.78 words, max 12, vs. gold's avg. 1.46 words, max
   3). It tags `"China controlled most of the match"` as `PER`, for example.
   90.6% of predicted span text is a verbatim substring of the input, so this
   is over-broad extraction, not hallucinated text.
 - **Type default bias.** `PER` accounts for 61.6% of predictions vs. 47.5% of
-  gold labels — ambiguous spans default to `PER`. Of predictions that land on
+  gold labels. Ambiguous spans default to `PER`. Of predictions that land on
   a real gold entity's exact text, 18.6% still have the wrong type.
 - **Surface heuristic over-tagging.** 73.4% of non-sentence-initial
   capitalized words end up inside some predicted span, consistent with
   "capitalized = entity" rather than real boundary detection.
 - **Schema collapse on out-of-distribution input.** All 11 out-of-schema type
-  labels (`person`, `HRIO`, `motion`, `number`, `organization`) appear on
-  CoNLL's terse cricket box-score sentences (e.g. `"C. Spearman c Moin Khan b
-  Wasim 0"`), where the model abandons `PER`/`ORG`/`LOC`/`MISC` entirely and
-  invents its own labels.
+  labels (`person`, `HRIO`, `motion`, `number`, `organization`) come from just
+  three sentences, every one of them a terse list-formatted line rather than
+  prose: two cricket box scores (e.g. `"C. Spearman c Moin Khan b Wasim 0"`)
+  and one football squad roster. On these the model abandons
+  `PER`/`ORG`/`LOC`/`MISC` entirely and invents its own labels.
 
 Net effect: this isn't "the model is bad at NER" so much as "the model was
 never taught this task or output contract." It defaults to generic
-instruction-tuned chat behavior — markdown formatting, clause-level salience,
-capitalization heuristics — that resembles NER without being it.
+instruction-tuned chat behavior (markdown formatting, clause-level salience,
+capitalization heuristics) that resembles NER without being it.
 
 ## Known limitation: label noise in the test set
 
-CoNLL-2003 contains documented annotation errors. Wang et al. (2019) manually
+CoNLL-2003 contains documented annotation errors. Wang et al. (2019)
+([CrossWeigh](https://aclanthology.org/D19-1519/)) manually
 corrected the full test set and found 186 sentences — 5.38% of the data —
 containing at least one token label error, releasing the corrected version as
 CoNLL++.
@@ -141,39 +149,39 @@ annotation noise, not a hard limit on task difficulty.
 across HuggingFace, GitHub, and Liquid AI's own blog, docs, and cookbook
 turned up no model card, paper, or repo combining any LFM/LFM2/LFM2.5 model
 with CoNLL-2003 or CoNLL++. The closest adjacent work converts LFM2.5 into a
-*bidirectional encoder* for GLiNER-style span matching —
+*bidirectional encoder* for GLiNER-style span matching:
 [SauerkrautLM-LFM2.5-GLiNER](https://huggingface.co/VAGOsolutions/SauerkrautLM-LFM2.5-GLiNER)
 and Liquid's own
-[LFM2.5-Encoder-350M-PII-Detector](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector) —
-evaluated on different benchmarks (CrossNER, PII datasets, BioNLP-CG), not
+[LFM2.5-Encoder-350M-PII-Detector](https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-PII-Detector),
+both evaluated on different benchmarks (CrossNER, PII datasets, BioNLP-CG), not
 CoNLL. As far as public evidence shows, decoder-only causal SFT of LFM2.5 on
 CoNLL-2003 via `leap-finetune` is a novel combination. (Caveat: this can't
 rule out unpublished internal work.)
 
 **Liquid AI already targets this problem space commercially, but not through
-this recipe.** Liquid ships a dedicated "Extract" product line —
-[LFM2-350M/1.2B-Extract](https://huggingface.co/LiquidAI/LFM2-1.2B-Extract)
+this recipe.** Liquid ships a dedicated "Extract" product line,
+[LFM2-350M/1.2B-Extract](https://huggingface.co/LiquidAI/LFM2-350M-Extract)
 and
-[LFM2.5-VL-Extract](https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract) —
-for schema-driven JSON/XML/YAML extraction, and their [technical
-report](https://arxiv.org/abs/2511.23404) names data extraction as a
-first-class use case. But their own eval is an internal document-extraction
-benchmark, not a public NER benchmark, and `leap-finetune` — the tool used
-for this project — ships no NER or structured-extraction example config; its
-reference tasks are generic SFT, GRPO math, VLM benchmarks, and document
-classification. This project fills that gap rather than following an
-official recipe.
+[LFM2.5-VL-Extract](https://huggingface.co/LiquidAI/LFM2.5-VL-450M-Extract),
+for schema-driven JSON/XML/YAML extraction, and the model card for
+[LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M) itself recommends
+it for data extraction, structured output, and tool use. But `leap-finetune`,
+the tool used for this project, ships no NER or structured-extraction example
+config. Its example configs cover SFT, LoRA, DPO, embedding and ColBERT, VLM
+variants, GRPO, and MoE, with smoltalk, GSM8K, MMMU, OCRBench, RefCOCO and
+POPE as reference datasets. This project fills that gap rather than following
+an official recipe.
 
 **Tested directly: `LFM2-350M-Extract` doesn't solve this task zero-shot.**
 Running the same 200 test sentences through `LiquidAI/LFM2-350M-Extract`
 gives 0.069 F1 with a plain-language system prompt, and 0.055 F1 with a
 schema-formatted prompt following Liquid's documented convention
-(`extract_schema_prompt.txt`) — both well below the *untuned* base
+(`extract_schema_prompt.txt`). Both land well below the *untuned* base
 `LFM2.5-350M`'s 0.141 F1, let alone the 0.871 this project's fine-tuned
 adapter reaches. The schema-formatted prompt cut out-of-schema type
 hallucinations from 100/200 to 31/200 but didn't improve F1, so this isn't
-primarily a prompting problem. The failure pattern — whole clauses tagged as
-a single entity, e.g. `"China controlled most of the match"` → `PER` —
+primarily a prompting problem. The failure pattern, whole clauses tagged as
+a single entity, e.g. `"China controlled most of the match"` → `PER`,
 suggests `Extract` is tuned for bounded document-field extraction (pull
 `name`/`email`/`invoice_number`, one value per field) rather than open-set
 span tagging, where an unknown number of entities, including repeats of the
@@ -211,10 +219,18 @@ uv run modal volume get leap-finetune "<run_dir>" ../lfm2-ner-poc/model/
 # 5. Evaluate
 uv run --with torch --with transformers --with accelerate python eval_ner.py \
   --model "<merged_model_path>" --out results/tuned-8k.json
+
+# 6. Optional: the zero-shot LFM2-350M-Extract comparison from Related work.
+#    --system-file swaps the system prompt without touching the test set.
+uv run --with torch --with transformers --with accelerate python eval_ner.py \
+  --model LiquidAI/LFM2-350M-Extract --out results/extract-zeroshot.json
+uv run --with torch --with transformers --with accelerate python eval_ner.py \
+  --model LiquidAI/LFM2-350M-Extract --system-file extract_schema_prompt.txt \
+  --out results/extract-zeroshot-schema.json
 ```
 
-Full per-example model outputs for all three runs are in `results/`, including
-raw generations, parsed predictions, and gold labels.
+Full per-example model outputs for every run are in `results/`, including raw
+generations, parsed predictions, and gold labels.
 
 ## Notes on the data
 
@@ -248,6 +264,6 @@ All inference ran at full precision on Apple Silicon MPS through
 `transformers`, which is close to the slowest way to run this model — Liquid
 reports 313 tok/s on AMD CPU with optimized runtimes. Re-running the baseline
 eval twice on the identical 200 sentences gave median latencies of 3941.9ms
-and 4254.2ms — a 7.9% swing from run-to-run noise alone, on the same machine,
+and 4254.2ms, a 7.9% swing from run-to-run noise alone, on the same machine,
 same model, same inputs. A meaningful latency claim requires the GGUF or MLX
 build.

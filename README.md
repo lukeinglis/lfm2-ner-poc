@@ -26,6 +26,15 @@ scoring across all three runs.
 F1 is entity-level micro F1 over exact `(text, type)` matches. An entity counts
 only if both the span boundaries and the type are correct.
 
+200 sentences is a small sample, so the point estimates carry real uncertainty.
+Bootstrapping over sentences (10,000 resamples, `rescore_conllpp.py`) gives 95%
+intervals of [0.109, 0.176] for the baseline, [0.181, 0.276] at 1k, and
+[0.810, 0.918] at 8k. The intervals for the three runs do not overlap, so the
+ordering is unambiguous, but the 8k figure should be read as roughly 0.87 give
+or take 0.05 rather than as three significant figures. These intervals cover
+test-set sampling only. Each run is a single training run at one seed, so they
+say nothing about how much the result would move under a different seed.
+
 Published state of the art on the original CoNLL-2003 test set is 94.3 F1
 (LUKE, [Yamada et al. 2020](https://arxiv.org/abs/2010.01057)), a bidirectional
 encoder with entity-aware self-attention and a span classifier. That is a
@@ -131,9 +140,21 @@ SOCCER - JAPAN GET LUCKY WIN , CHINA IN SURPRISE DEFEAT .
 gold: JAPAN=LOC, CHINA=PER
 ```
 
-`CHINA` is labeled `PER` in the original gold annotations. Some fraction of the
-remaining F1 gap is therefore unwinnable against this test set. Re-scoring
-against CoNLL++ would give a cleaner number.
+`CHINA` is labeled `PER` in the original gold annotations, and the 8k model
+predicts `LOC`, which CoNLL++ agrees with.
+
+Re-scoring against CoNLL++ settles how much this actually costs, and the answer
+is: very little, at this sample size. `rescore_conllpp.py` aligns the corrected
+labels positionally against the same 200 sentences and re-scores the saved
+predictions, no inference required. Exactly **one** of the 200 sentences has a
+corrected label, the one above. The 8k run moves from 0.8707 to 0.8732 F1.
+Baseline and 1k do not move at all, because neither predicted `LOC` there to
+benefit.
+
+So while the 5.38% figure is real at the dataset level, on this particular
+sample label noise is worth about a quarter of an F1 point, far inside the
+sampling noise reported below. It is not a meaningful part of the remaining
+gap here.
 
 A follow-up correction, CleanCoNLL ([Rücker & Akbik, EMNLP
 2023](https://aclanthology.org/2023.emnlp-main.533/)), fixed 7.0% of all
@@ -227,6 +248,12 @@ uv run --with torch --with transformers --with accelerate python eval_ner.py \
 uv run --with torch --with transformers --with accelerate python eval_ner.py \
   --model LiquidAI/LFM2-350M-Extract --system-file extract_schema_prompt.txt \
   --out results/extract-zeroshot-schema.json
+```
+
+```bash
+# 7. Re-score the saved predictions against CoNLL++ and get bootstrap CIs.
+#    Reads results/ directly, so no model inference is needed.
+uv run python rescore_conllpp.py
 ```
 
 Full per-example model outputs for every run are in `results/`, including raw
